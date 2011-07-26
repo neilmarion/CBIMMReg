@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  last_name: MyString
+  first_name: MyString
+  middle_name: MyString
+  year_level: 1
+  course_section: MyString
+  zone_group: MyString
+  school: 
+  locale: 
+  circle: 
+  encoder: 
+
+two:
+  last_name: MyString
+  first_name: MyString
+  middle_name: MyString
+  year_level: 1
+  course_section: MyString
+  zone_group: MyString
+  school: 
+  locale: 
+  circle: 
+  encoder: 

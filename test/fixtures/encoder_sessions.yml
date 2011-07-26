@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  encoder: 
+  ip_address: MyString
+  path: MyString
+
+two:
+  encoder: 
+  ip_address: MyString
+  path: MyString
