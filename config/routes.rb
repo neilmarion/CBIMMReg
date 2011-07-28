@@ -1,4 +1,17 @@
 CbimmregP::Application.routes.draw do
+=begin
+  get "users/index"
+
+  get "users/show"
+
+  get "users/new"
+
+  get "users/edit"
+
+  get "sessions/new"
+
+  get "home/index"
+=end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -55,4 +68,7 @@ CbimmregP::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
+  resources :users
+  resources :sessions
+  root :to => "home#index"
 end

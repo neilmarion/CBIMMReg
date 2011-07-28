@@ -1,0 +1,10 @@
+<% @user.errors.full_messages.each do |msg| %>
+  <%= msg %>
+<% end %>
+
+<fieldset>
+  <legend>Register</legend>
+
+  <%= render 'form' %>
+  
+</fieldset>

@@ -1,0 +1,12 @@
+<% @user.errors.full_messages.each do |msg| %>
+  <%= msg %>
+<% end %>
+
+<fieldset>
+  <legend>Edit Account</legend>
+  <%= render :partial => 'form' %>
+</fieldset>
+
+<br />
+
+<%= button_to "Unregister", @user, :method => :delete, :confirm => "Are you sure?" %>

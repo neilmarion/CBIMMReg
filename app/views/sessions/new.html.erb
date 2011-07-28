@@ -1,0 +1,20 @@
+<% @session.errors.full_messages.each do |msg| %>
+  <%= msg %>
+<% end %>
+
+<fieldset>
+  <legend>Login</legend>
+
+  <% form_for @session do |f| %>
+  
+    <label for="session_name">Name</label><br />
+    <%= f.text_field :email %><br />
+  
+    <label for="session_password">Password</label><br />
+    <%= f.password_field :password %><br />
+  
+    <%= submit_tag "login" %>
+  
+  <% end %>
+
+</fieldset>

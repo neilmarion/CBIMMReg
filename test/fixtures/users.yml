@@ -1,19 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  last_name: MyString
-  first_name: MyString
-  mname: MyString
-  locale: 
   email: MyString
   salt: MyString
   encrypted_password: MyString
+  role: 
 
 two:
-  last_name: MyString
-  first_name: MyString
-  mname: MyString
-  locale: 
   email: MyString
   salt: MyString
   encrypted_password: MyString
+  role: 
