@@ -6,8 +6,9 @@ gem 'rails', '3.0.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2', '~> 0.2.6'
-gem 'mongrel'
+#gem 'mongrel'
 gem 'faker'
+gem 'heroku'
 
 # Use unicorn as the web server
 # gem 'unicorn'
