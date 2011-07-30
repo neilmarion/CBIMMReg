@@ -8,6 +8,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :last_name
       t.string :middle_name
       t.belongs_to :locale
+      t.belongs_to :area
       t.integer :role
 
       t.timestamps

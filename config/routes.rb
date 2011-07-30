@@ -1,5 +1,14 @@
 CbimmregP::Application.routes.draw do
 =begin
+  get "members/index"
+
+  get "members/show"
+
+  get "members/new"
+
+  get "members/edit"
+
+
   get "users/index"
 
   get "users/show"
@@ -70,5 +79,14 @@ CbimmregP::Application.routes.draw do
   # match ':controller(/:action(/:id(.:format)))'
   resources :users
   resources :sessions
+
+  namespace :admin do
+    resources :members, :controller => :members
+  end
+
+  namespace :encoder do
+    resources :members, :controller => :members
+  end
+
   root :to => "home#index"
 end

@@ -34,6 +34,8 @@ GEM
     daemons (1.1.4)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    faker (0.9.5)
+      i18n (~> 0.4)
     fastthread (1.0.7)
     gem_plugin (0.2.3)
     i18n (0.5.0)
@@ -80,6 +82,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  faker
   mongrel
   mysql2 (~> 0.2.6)
   rails (= 3.0.9)

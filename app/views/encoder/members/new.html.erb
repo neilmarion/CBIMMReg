@@ -1,0 +1,59 @@
+<h1>New Member</h1>
+
+<% form_for @member, :url => encoder_members_path do |m| %>
+  <% @member.errors.full_messages.each do |msg| %>
+    <%= msg %>
+  <% end %>
+
+  <p>
+    First Name<br />
+    <%= m.text_field :first_name %>
+  </p>
+  <p>
+    Middle Name<br />
+    <%= m.text_field :middle_name %>
+  </p>
+  <p>
+    Last Name<br />
+    <%= m.text_field :last_name %>
+  </p>
+  <p>
+    Course/Section<br />
+    <%= m.text_field :course_section %>
+  </p>
+  <p>
+    Purok-Grupo<br />
+    <%= m.text_field :zone_group %>
+  </p>
+  <p>
+    School<br>
+    <%= m.select :school_id, options_from_collection_for_select(@schools, 'id', 'name') %>
+  </p>
+  <p>
+    Locale<br>
+    <%= m.select :locale_id, options_from_collection_for_select(@locales, 'id', 'name') %>
+  </p>
+  <p>
+    Area<br>
+    <%= m.select :area_id, options_from_collection_for_select(@areas, 'id', 'name') %>
+  </p>
+  <p>
+    Year-level<br>
+    <%= m.select :year_level, options_for_select(Member::YEAR_LEVEL.sort{ |a, b| -1*(b[1] <=> a[1]) }) %><br/>
+  </p>
+  <p>
+    Kapisanan<br>
+    <%= m.select :circle_id, options_from_collection_for_select(@circles, 'id', 'name') %>
+  </p>
+
+  <p>
+    <%= m.hidden_field :encoder_id, :value => @user.id %>
+  </p>
+
+
+  <p>
+    <%= m.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', encoder_members_path %>

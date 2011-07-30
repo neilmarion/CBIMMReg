@@ -9,9 +9,11 @@
   <body>
     <div id="header">
     <% if @user %>
-      <%= link_to "Home", root_path, :class => "header_link" %>
-      <%= link_to "Edit Account", edit_user_path('account'), :class => "header_link" %> -
-      <%= link_to "Logout", @application_session, :method => :delete, :class => "header_link" %>
+      <% if @user.first_name.to_s != "" %>
+        <%= link_to "Home", root_path, :class => "header_link" %>
+        <%= link_to "Edit Account", edit_user_path('account'), :class => "header_link" %> -
+        <%= link_to "Logout", @application_session, :method => :delete, :class => "header_link" %>
+      <% end %>
     <% else %>
       <%= render 'sessions/new' %>
     <% end %>

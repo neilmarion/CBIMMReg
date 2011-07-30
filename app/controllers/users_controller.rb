@@ -12,6 +12,7 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+    puts "HELLO " + @user.first_name.to_s
   end
 
   def create

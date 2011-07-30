@@ -1,0 +1,2 @@
+module Encoder::MembersHelper
+end

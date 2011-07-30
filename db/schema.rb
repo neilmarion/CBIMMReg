@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(:version => 20110728014458) do
 
   create_table "locales", :force => true do |t|
     t.string   "name"
-    t.integer  "area_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -40,6 +39,7 @@ ActiveRecord::Schema.define(:version => 20110728014458) do
     t.string   "course_section"
     t.string   "zone_group"
     t.integer  "school_id"
+    t.integer  "area_id"
     t.integer  "locale_id"
     t.integer  "circle_id"
     t.integer  "encoder_id"
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(:version => 20110728014458) do
 
   create_table "schools", :force => true do |t|
     t.string   "name"
+    t.integer  "area_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -69,6 +70,7 @@ ActiveRecord::Schema.define(:version => 20110728014458) do
     t.string   "last_name"
     t.string   "middle_name"
     t.integer  "locale_id"
+    t.integer  "area_id"
     t.integer  "role"
     t.datetime "created_at"
     t.datetime "updated_at"
