@@ -9,7 +9,7 @@ gem 'mysql2', '~> 0.2.6'
 #gem 'mongrel'
 gem 'faker'
 gem 'heroku'
-gem 'jquery-rails'
+#gem 'jquery-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'

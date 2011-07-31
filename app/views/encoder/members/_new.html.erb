@@ -14,7 +14,8 @@
         <%= m.text_field :last_name, { :size => 10, :value => "Last Name"} %>
       </td>
       <td>
-        <%= m.select :school_id, options_from_collection_for_select(@schools, 'id', 'name') %>
+        <%= m.select :school_id, options_from_collection_for_select(@schools.sort_by(&:name), 'id', 'name') %>
+        <%= text_field_tag :new_school, "Type in school here if not available above", :size => "30" %>
       </td>
       <td>
         <%= m.text_field :course_section, { :size => 15, :value => "Course / Section"}%>

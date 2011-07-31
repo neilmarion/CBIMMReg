@@ -72,3 +72,8 @@ body {
   border:1px solid #000000;
   color: grey;
 }
+
+#new_school{
+  display: none;
+}
+

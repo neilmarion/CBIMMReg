@@ -11,9 +11,15 @@ User.create(:email => "neilmarion", :password => "neilmarion", :password_confirm
 
 #CREATING SCHOOLS
 
+
+School.create(:name => "ZZZZZ  NONE  ZZZZZ")
+
 1.upto(10) do
   School.create(:name => Faker::Name.name + " Memorial School")
 end
+
+
+
 
 #CREATING AREAS
 
