@@ -1,6 +1,11 @@
 class Encoder::MembersController < ApplicationController
   def index
     @members = Member.find(:all, :conditions => "encoder_id = #{@user.id}") if @user
+    @schools = School.find(:all)
+    @areas = Area.find(:all)
+    @locales = Locale.find(:all)
+    @circles = Circle.find(:all)
+    @member = Member.new
   end
 
   def show

@@ -1,5 +1,80 @@
-<% @members.each do |m| %>
-  <%= m.first_name %>
-<% end %>
+<table class="entries">
+  <tr id="entries_header">
+      <td>
+        FIRST NAME
+      </td>      
+      <td>
+        MIDDLE NAME
+      </td>
+      <td>
+        LAST NAME
+      </td>
+      <td>
+       SCHOOL
+      </td>
+      <td>
+        COURSE / SECTION
+      </td>
+      <td>
+       PRK-GRP
+      </td>
+      <td>
+        LOCALE
+      </td>
+      <td>
+        AREA OF<br>SCHOOL
+      </td>
+      <td>
+        YEAR-LEVEL
+      </td>
+      <td>
+        KAPISANAN
+      </td>
+      <td>
 
-<%= link_to "new member", new_encoder_member_path %>
+      </td>
+    </tr>
+
+  <% @members.each do |m| %>
+    <tr class="entry">
+      <td>
+        <%= m.first_name %>
+      </td>
+      <td>
+        <%= m.middle_name %>
+      </td>
+      <td>
+        <%= m.last_name %>
+      </td>
+      <td>
+        <%= m.school.name %>
+      </td>
+      <td>
+        <%= m.course_section %>
+      </td>
+      <td>
+        <%= m.zone_group %>
+      </td>
+      <td>
+        <%= m.locale.name %>
+      </td>
+      <td>
+        <%= m.area.name %>
+      </td>
+      <td>
+        <%= Member::YEAR_LEVEL.invert[m.year_level] %>
+      </td>
+      <td>
+        <%= m.circle.name %>
+      </td>
+      <td>
+
+      </td>
+    </tr>
+  <% end %>
+    <tr class="form_new">
+      <%= render :partial => 'new' %>
+    <tr>
+</table>
+
+<% link_to "new member", new_encoder_member_path %>

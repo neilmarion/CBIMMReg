@@ -22,3 +22,53 @@ body {
 .header_link{
   color: white;
 }
+
+.entries{
+  width: 100%;
+}
+
+#entries_header{
+  background: yellow;
+  padding: 2px;
+	font-size: 13px;
+	font-family: Arial;
+	text-align: left;
+}
+
+#entries_header td{
+  padding: 2px;
+}
+
+.form_new{
+  background: white;
+  padding: 2px;
+  border: solid 2px red;
+	font-size: 11px;
+	font-family: Arial;
+	text-align: left;
+}
+
+.entry{
+  /* display: none; */
+  background: #24ff00;
+  padding: 2px;
+  /* border: solid 2px red; */
+	font-size: 11px;
+	font-family: Arial;
+	text-align: left;
+  color: #000000;
+  width: 100%;
+}
+
+.entry td{
+  padding: 2px;
+}
+
+.form_new td{
+  width: auto;
+}
+
+.form_new td input{
+  border:1px solid #000000;
+  color: grey;
+}

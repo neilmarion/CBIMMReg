@@ -3,57 +3,24 @@
     <%= msg %>
   <% end %>
 
-  <table class="form_new">
-    <tr>
+
       <td>
-        First Name
-      </td>      
-      <td>
-        Middle Name
+        <%= m.text_field :first_name, { :size => 10, :value => "First Name" } %>
       </td>
       <td>
-        Last Name
+        <%= m.text_field :middle_name, { :size => 10, :value => "Middle Initial" } %>
       </td>
       <td>
-        Course/Section
-      </td>
-      <td>
-       Prk-Grp
-      </td>
-      <td>
-       School
-      </td>
-      <td>
-        Locale
-      </td>
-      <td>
-        Area<br>
-      </td>
-      <td>
-        Year-level
-      </td>
-      <td>
-        Kapisanan
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <%= m.text_field :first_name, :size => 10%>
-      </td>
-      <td>
-        <%= m.text_field :middle_name, :size => 10 %>
-      </td>
-      <td>
-        <%= m.text_field :last_name, :size => 10 %>
-      </td>
-      <td>
-        <%= m.text_field :course_section, :size => 10 %>
-      </td>
-      <td>
-        <%= m.text_field :zone_group, :size => 5 %>
+        <%= m.text_field :last_name, { :size => 10, :value => "Last Name"} %>
       </td>
       <td>
         <%= m.select :school_id, options_from_collection_for_select(@schools, 'id', 'name') %>
+      </td>
+      <td>
+        <%= m.text_field :course_section, { :size => 15, :value => "Course / Section"}%>
+      </td>
+      <td>
+        <%= m.text_field :zone_group, { :size => 5, :value => "Prk-Grp"} %>
       </td>
       <td>
         <%= m.select :locale_id, options_from_collection_for_select(@locales, 'id', 'name') %>
@@ -71,8 +38,6 @@
         <%= m.submit "CREATE" %>
       </td>
     </tr>
-  </table>
+
   <%= m.hidden_field :encoder_id, :value => @user.id %>
 <% end %>
-
-<%= link_to 'Back', encoder_members_path %>
