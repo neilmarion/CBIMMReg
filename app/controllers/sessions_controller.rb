@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
     if @session.save
       session[:id] = @session.id
       flash[:notice] = "Hello #{@session.user.first_name}, you are now logged in"
-      redirect_to root_path
+      redirect_to encoder_members_path     
     else
       render(:action => 'new')
     end
