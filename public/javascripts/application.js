@@ -6,7 +6,7 @@ $(function() {
     this.style.color = '#000000'
   });
   $(".form_new td input").click(function() {
-    if(this.value == 'First Name' || this.value == 'Middle Initial' || this.value == 'Last Name' || this.value == 'Course / Section' || this.value == 'Prk-Grp' || this.value == 'Type in school here if not available above') { this.value=''; this.style.color='grey'}
+    if(this.value == 'First Name' || this.value == 'Middle Initial' || this.value == 'Last Name' || this.value == 'Course / Section' || this.value == 'Prk-Grp' || this.value == 'Type in school here if not available above' || this.value == 'Type in area here if not available above' || this.value == 'Type in locale here if not available above') { this.value=''; this.style.color='grey'}
   });
   $(".form_new td input").blur(function() {
     if (this.value == '') {
@@ -22,9 +22,18 @@ $(function() {
     }
   });
   $(".form_new td select").change(function() {
-    //alert($('#new_school').attr('id'))
-    if(this.value == 1) $('#new_school').css("display", "block");
-    else $('#new_school').css("display", "none");
+    //alert($('#new_school').attr('id')) 
+    //alert($(this).attr('id'));
+    if($(this).attr('id') == "member_school_id"){
+      if(this.value == 1) $('#new_school').css("display", "block");
+      else $('#new_school').css("display", "none"); 
+    }else if($(this).attr('id') == "member_area_id"){
+      if(this.value == 1) $('#new_area').css("display", "block");
+      else $('#new_area').css("display", "none"); 
+    }else if($(this).attr('id') == "member_locale_id"){
+      if(this.value == 1) $('#new_locale').css("display", "block");
+      else $('#new_locale').css("display", "none"); 
+    }
     //if(this.value == 1) alert($('#new_school').id)
   });
 });

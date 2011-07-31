@@ -15,7 +15,7 @@
       </td>
       <td>
         <%= m.select :school_id, options_from_collection_for_select(@schools.sort_by(&:name), 'id', 'name') %>
-        <%= text_field_tag :new_school, "Type in school here if not available above", :size => "30" %>
+        <%= text_field_tag :new_school, "Type in school here if not available above" %>
       </td>
       <td>
         <%= m.text_field :course_section, { :size => 15, :value => "Course / Section"}%>
@@ -24,10 +24,12 @@
         <%= m.text_field :zone_group, { :size => 5, :value => "Prk-Grp"} %>
       </td>
       <td>
-        <%= m.select :locale_id, options_from_collection_for_select(@locales, 'id', 'name') %>
+        <%= m.select :locale_id, options_from_collection_for_select(@locales.sort_by(&:name), 'id', 'name') %>
+        <%= text_field_tag :new_locale, "Type in locale here if not available above" %>
       </td>
       <td>
-        <%= m.select :area_id, options_from_collection_for_select(@areas, 'id', 'name') %>
+        <%= m.select :area_id, options_from_collection_for_select(@areas.sort_by(&:name), 'id', 'name') %>
+        <%= text_field_tag :new_area, "Type in area here if not available above" %>
       </td>
       <td>
         <%= m.select :year_level, options_for_select(Member::YEAR_LEVEL.sort{ |a, b| -1*(b[1] <=> a[1]) }) %><br/>

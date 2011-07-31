@@ -23,11 +23,15 @@ end
 
 #CREATING AREAS
 
+Area.create(:name => "ZZZZZ  NONE  ZZZZZ")
+
 1.upto(10) do
   Area.create(:name => Faker::Address.city, :location => Faker::Address.us_state)
 end
 
 #CREATING LOCALES
+
+Locale.create(:name => "ZZZZZ  NONE  ZZZZZ")
 
 1.upto(10) do
   Locale.create(:name => Faker::Address.us_state)

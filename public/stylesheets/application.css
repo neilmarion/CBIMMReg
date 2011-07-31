@@ -77,3 +77,11 @@ body {
   display: none;
 }
 
+#new_locale{
+  display: none;
+}
+
+#new_area{
+  display: none;
+}
+

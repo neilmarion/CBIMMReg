@@ -17,7 +17,9 @@ class Encoder::MembersController < ApplicationController
   def create
     @member = Member.new(params[:member])
     @member.school = School.create(:name => params[:new_school]) if params[:new_school] != "Type in school here if not available above"
-    
+    @member.locale = Locale.create(:name => params[:new_locale]) if params[:new_locale] != "Type in locale here if not available above"
+    @member.area = Area.create(:name => params[:new_area]) if params[:new_area] != "Type in area here if not available above"
+
     if @member.save
       flash[:notice] = "Added #{@member.first_name} #{@member.middle_name} #{@member.last_name}"
       redirect_to (encoder_members_path)
