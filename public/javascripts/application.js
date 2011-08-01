@@ -6,7 +6,7 @@ $(function() {
     this.style.color = '#000000'
   });
   $(".form_new td input").click(function() {
-    if(this.value == 'First Name' || this.value == 'Middle Initial' || this.value == 'Last Name' || this.value == 'Course / Section' || this.value == 'Prk-Grp' || this.value == 'Type in school here if not available above' || this.value == 'Type in area here if not available above' || this.value == 'Type in locale here if not available above') { this.value=''; this.style.color='grey'}
+    if(this.value == 'First Name' || this.value == 'Middle Initial' || this.value == 'Last Name' || this.value == 'Course / Section' || this.value == 'Prk-Grp' || this.value == 'Type in school here if not available above' || this.value == 'Type in area here if not available above' || this.value == 'Type in locale here if not available above' || this.value == 'Contact No') { this.value=''; this.style.color='grey'}
   });
   $(".form_new td input").blur(function() {
     if (this.value == '') {
@@ -15,6 +15,7 @@ $(function() {
       else if(this.id == 'member_last_name') this.value = 'Last Name';
       else if(this.id == 'member_course_section') this.value = 'Course / Section';
       else if(this.id == 'member_zone_group') this.value = 'Prk-Grp';
+      else if(this.id == 'member_contact_number') this.value = 'Contact No';
       else if(this.id == 'new_school') this.value = "Type in school here if not available above";
       this.style.color='grey';
 

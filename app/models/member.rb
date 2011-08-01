@@ -1,5 +1,7 @@
 class Member < ActiveRecord::Base
-  YEAR_LEVEL = {"First Year" => 1, "Second Year" => 2, "Third Year" => 3, "Senior Year" => 4}
+  YEAR_LEVEL = {"1st" => 1, "2nd" => 2, "3rd" => 3, "4th" => 4, "5th" => 5}
+  FILTER_BY = {"SCHOOL" => 1, "AREA" => 2, "LOCALE" => 3, "YEAR LEVEL" => 4, "--NONE--" => 5}
+  SORT = {"FIRST NAME" => 1, "LAST NAME" => 2, "NONE" => 3}
 
   belongs_to :school
   belongs_to :locale

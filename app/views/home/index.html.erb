@@ -1,7 +1,6 @@
-asdfsa
-
 <div id="home">
   <% if @user %>
-    <%= render @user.role == 1 ? 'admin' : 'encoder' %>
+    <%= @user.role %>
+    <%= render partial => @user.role == 1 ? 'admin' : 'encoder' %>
   <% end %>
 </div>

@@ -10,6 +10,8 @@ gem 'mysql2', '~> 0.2.6'
 gem 'faker'
 gem 'heroku'
 gem 'jquery-rails'
+gem 'will_paginate'
+gem 'fastercsv'
 
 
 # Use unicorn as the web server

@@ -16,19 +16,26 @@ class UsersController < ApplicationController
   end
 
   def create
+    secret = Secret.find(1).password
     @user = User.new(params[:user])
-    if @user.save
-      @session = @user.sessions.create
-      session[:id] = @session.id
-      flash[:notice] = "Welcome #{@user.email}, you are now registered"
-      redirect_to root_path
+
+    if secret == params[:secret]
+      if @user.save
+        @session = @user.sessions.create
+        session[:id] = @session.id
+        flash[:notice] = "Welcome #{@user.email}, you are now registered"
+        redirect_to root_path
+      else
+        render(:action => 'new')
+      end
     else
+      flash[:notice] = "You entered the wrong secret"
       render(:action => 'new')
     end
   end
 
   def update
-    @user = Person.find(@user)
+    @user = User.find(@user)
     if @user.update_attributes(params[:user])
       flash[:notice] = "Your account has been updated"
       redirect_to root_path

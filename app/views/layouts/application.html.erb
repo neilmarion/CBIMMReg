@@ -8,17 +8,33 @@
   </head>
   <body>
     <div id="header">
+
     <% if @user %>
+      <div style="float:left">
+        Welcome <%= @user.first_name %> <%= @user.last_name %>
+      </div>
       <% if @user.first_name.to_s != "" %>
         <%= link_to "Home", root_path, :class => "header_link" %>
         <%= link_to "Edit Account", edit_user_path('account'), :class => "header_link" %> -
-        <%= button_to "Logout", @application_session, :method => :delete, :class => "header_link" %>
+        <%= link_to "Logout", @application_session, :method => :delete, :class => "header_link" %>
       <% end %>
     <% else %>
       <%= render 'sessions/new' %>
     <% end %>
     </div>
-
+    <% if @user && @user.role == 1%>
+      <hr>
+      <div class="menu" style="float:left">
+        <table>
+          <tr>
+            <td><%= link_to "MEMBERS", admin_members_path, :class => "menu_link" %>&nbsp&nbsp</td>
+            <td><%= link_to "ENCODERS", admin_members_path, :class => "menu_link" %>&nbsp&nbsp</td>
+            <td><%= link_to "FIELD VALUES", admin_members_path, :class => "menu_link" %>&nbsp&nbsp</td>
+            <td><%= link_to "STATISTICS", admin_members_path, :class => "menu_link" %>&nbsp&nbsp</td>
+          <tr>
+        </table>
+      </div>
+    <% end %>
   <%= yield %>
   </body>
 </html>

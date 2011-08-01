@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110728014458) do
+ActiveRecord::Schema.define(:version => 20110801083050) do
 
   create_table "areas", :force => true do |t|
     t.string   "name"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(:version => 20110728014458) do
     t.integer  "year_level"
     t.string   "course_section"
     t.string   "zone_group"
+    t.string   "contact_number"
     t.integer  "school_id"
     t.integer  "area_id"
     t.integer  "locale_id"
@@ -50,6 +51,12 @@ ActiveRecord::Schema.define(:version => 20110728014458) do
   create_table "schools", :force => true do |t|
     t.string   "name"
     t.integer  "area_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "secrets", :force => true do |t|
+    t.string   "password"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

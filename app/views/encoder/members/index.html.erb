@@ -5,31 +5,31 @@
         FIRST NAME
       </td>      
       <td>
-        MIDDLE NAME
-      </td>
-      <td>
         LAST NAME
       </td>
       <td>
        SCHOOL
       </td>
       <td>
-        COURSE / SECTION
+        AREA OF SCHOOL
       </td>
       <td>
-       PRK-GRP
+        YR-LVL
+      </td>
+      <td>
+        COURSE / SECTION
       </td>
       <td>
         LOCALE
       </td>
       <td>
-        AREA OF<br>SCHOOL
-      </td>
-      <td>
-        YEAR-LEVEL
+       PRK-GRP
       </td>
       <td>
         KAPISANAN
+      </td>
+      <td>
+        CONTACT NO
       </td>
       <td>
 
@@ -42,22 +42,10 @@
         <%= m.first_name %>
       </td>
       <td>
-        <%= m.middle_name %>
-      </td>
-      <td>
         <%= m.last_name %>
       </td>
       <td>
         <%= m.school.name %>
-      </td>
-      <td>
-        <%= m.course_section %>
-      </td>
-      <td>
-        <%= m.zone_group %>
-      </td>
-      <td>
-        <%= m.locale.name %>
       </td>
       <td>
         <%= m.area.name %>
@@ -66,7 +54,19 @@
         <%= Member::YEAR_LEVEL.invert[m.year_level] %>
       </td>
       <td>
+        <%= m.course_section %>
+      </td>
+      <td>
+        <%= m.locale.name %>
+      </td>
+      <td>
+        <%= m.zone_group %>
+      </td>
+      <td>
         <%= m.circle.name %>
+      </td>
+      <td>
+        <%= m.contact_number %>
       </td>
       <td>
 

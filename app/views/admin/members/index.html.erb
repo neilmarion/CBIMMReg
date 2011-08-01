@@ -1,2 +1,111 @@
-<h1>Admin::Members#index</h1>
-<p>Find me in app/views/admin/members/index.html.erb</p>
+
+<div class="filter" style="float:left">
+  <table>
+    <tr>
+      <td>FILTERS</td>
+    </tr>
+
+    <tr>
+      <%= form_tag admin_members_path, :method => :get do %>
+      <td style="padding-right:20px">
+        <%= submit_tag "NONE", :params => { :none => true } %>
+      </td>
+      <% end %>
+      <%= form_tag admin_members_path, :method => :get do %>
+      <td>
+        <%= select_tag :area, options_from_collection_for_select(@areas.sort_by(&:name), 'id', 'name') %>
+      </td>
+      <td style="padding-right:20px">
+        <%= submit_tag "BY AREA" %>
+      </td>
+      <% end %>
+      <%= form_tag admin_members_path, :method => :get do %>
+      <td>
+        <%= select_tag :school, options_from_collection_for_select(@schools.sort_by(&:name), 'id', 'name') %>
+      </td>
+      <td style="padding-right:20px">
+        <%= submit_tag "BY SCHOOL" %>
+      </td>
+      <% end %>
+      <%= form_tag admin_members_path, :method => :get do %>
+      <td>
+        <%= select_tag :locale, options_from_collection_for_select(@locales.sort_by(&:name), 'id', 'name') %>
+      </td>
+      <td style="padding-right:20px">
+        <%= submit_tag "BY LOCALE" %>
+      </td>
+      <% end %>
+      <td>Total of Members per filter: <%= @members.count %></td>
+    <tr>
+  </table>
+</div>
+
+<table class="entries">
+  <tr id="entries_header">      
+    <td>
+      LAST NAME
+    </td>
+    <td>
+      FIRST NAME
+    </td>
+    <td>
+     SCHOOL
+    </td>
+    <td>
+      AREA OF SCHOOL
+    </td>
+    <td>
+      YR-LVL
+    </td>
+    <td>
+      COURSE / SECTION
+    </td>
+    <td>
+      LOCALE
+    </td>
+    <td>
+     PRK-GRP
+    </td>
+    <td>
+      KAPISANAN
+    </td>
+    <td>
+      CONTACT NO
+    </td>
+  </tr>
+
+  <% @members.each do |m| %>
+    <tr class="entry">
+      <td>
+        <%= m.last_name %>
+      </td>
+      <td>
+        <%= m.first_name %>
+      </td>
+      <td>
+        <%= m.school.name %>
+      </td>
+      <td>
+        <%= m.area.name %>
+      </td>
+      <td>
+        <%= Member::YEAR_LEVEL.invert[m.year_level] %>
+      </td>
+      <td>
+        <%= m.course_section %>
+      </td>
+      <td>
+        <%= m.locale.name %>
+      </td>
+      <td>
+        <%= m.zone_group %>
+      </td>
+      <td>
+        <%= m.circle.name %>
+      </td>
+      <td>
+        <%= m.contact_number %>
+      </td>
+    </tr>
+  <% end %>
+</table>
