@@ -35,4 +35,9 @@ class Encoder::MembersController < ApplicationController
     @circles = Circle.find(:all)
     @member = Member.new
   end
+
+  def destroy
+    Member.find(params[:id]).destroy
+    redirect_to (encoder_members_path)
+  end
 end

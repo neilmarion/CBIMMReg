@@ -81,7 +81,11 @@ CbimmregP::Application.routes.draw do
   resources :sessions
 
   namespace :admin do
-    resources :members, :controller => :members
+    resources :members, :controller => :members do
+      collection do
+        get 'export'
+      end
+    end
   end
 
   namespace :encoder do

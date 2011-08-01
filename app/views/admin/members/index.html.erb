@@ -2,6 +2,46 @@
 <div class="filter" style="float:left">
   <table>
     <tr>
+      <td>EXPORT</td>
+    </tr>
+
+    <tr>
+      <%= form_tag export_admin_members_path, :method => :get do %>
+      <td style="padding-right:20px">
+        <%= submit_tag "NONE", :params => { :none => true } %>
+      </td>
+      <% end %>
+      <%= form_tag export_admin_members_path, :method => :get do %>
+      <td>
+        <%= select_tag :area, options_from_collection_for_select(@areas.sort_by(&:name), 'id', 'name') %>
+      </td>
+      <td style="padding-right:20px">
+        <%= submit_tag "BY AREA" %>
+      </td>
+      <% end %>
+      <%= form_tag export_admin_members_path, :method => :get do %>
+      <td>
+        <%= select_tag :school, options_from_collection_for_select(@schools.sort_by(&:name), 'id', 'name') %>
+      </td>
+      <td style="padding-right:20px">
+        <%= submit_tag "BY SCHOOL" %>
+      </td>
+      <% end %>
+      <%= form_tag export_admin_members_path, :method => :get do %>
+      <td>
+        <%= select_tag :locale, options_from_collection_for_select(@locales.sort_by(&:name), 'id', 'name') %>
+      </td>
+      <td style="padding-right:20px">
+        <%= submit_tag "BY LOCALE" %>
+      </td>
+      <% end %>
+    <tr>
+  </table>
+</div>
+
+<div class="filter" style="float:left; padding-top:0px;">
+  <table>
+    <tr>
       <td>FILTERS</td>
     </tr>
 

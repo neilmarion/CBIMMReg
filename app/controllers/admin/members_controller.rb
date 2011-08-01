@@ -24,9 +24,9 @@ class Admin::MembersController < ApplicationController
   def export
     members = Member.find(:all)
     csv_string = FasterCSV.generate do |csv|
-      csv << ["Last Name", "First Name", "Paaralan", "Area ng Paaralan", "Course / Section", "Lokal", "Prk-Grp", "Kapisanan", "Contact No"]
+      csv << ["LAST NAME", "FIRST NAME", "PAARALAN", "AREA NG PAARALAN", "COURSE / SECTION", "LOKAL", "PRK-GRP", "KAPISANAN", "CONTACT NO"]
       for member in members
-        csv << [(member.last_name), member.first_name, member.school.name, member.area.name, member.course_section, member.locale.name, member.zone_group.name, member.circle.name, member.contact_number] 
+        csv << [(member.last_name), member.first_name, member.school.name, member.area.name, member.course_section, member.locale.name, member.zone_group, member.circle.name, member.contact_number] 
       end
     end
     send_data csv_string, :type => 'text/csv; charset=UTF-8; header=present', :disposition => "attachment; filename=members.csv"

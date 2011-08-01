@@ -69,7 +69,7 @@
         <%= m.contact_number %>
       </td>
       <td>
-
+        <%= button_to "delete", encoder_member_path(m), :method => :delete, :class => "header_link" %>
       </td>
     </tr>
   <% end %>
