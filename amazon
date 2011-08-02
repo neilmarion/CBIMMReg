@@ -1,0 +1,402 @@
+IMAGE	aki-d4ca2dbd	aki-linux-2.6.18.92-92.el5xen-xfs/vmlinuz-2.6.18.92-92.el5xen.i386.aki.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-46e7002f	aki-linux.2.6.21.7-2.fc8xen-xfs/vmlinuz.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	ami-d8699bb1	amazon/ami-vpc-nat-1.0.0-beta.i386-ebs	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-33d88c5f	8	
+IMAGE	ami-c6699baf	amazon/ami-vpc-nat-1.0.0-beta.x86_64-ebs	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-57d88c3b	8	
+IMAGE	ami-30f30659	amazon/amzn-ami-0.9.7-beta.i386-ebs	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-d895cdb3	10	
+IMAGE	ami-0af30663	amazon/amzn-ami-0.9.7-beta.x86_64-ebs	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-f295cd99	10	
+IMAGE	ami-3ac33653	amazon/amzn-ami-0.9.8-beta.i386-ebs	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-14ba967f	10	
+IMAGE	ami-38c33651	amazon/amzn-ami-0.9.8-beta.x86_64-ebs	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-10b9957b	10	
+IMAGE	ami-08728661	amazon/amzn-ami-0.9.9-beta.i386-ebs	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-674a930d	10	
+IMAGE	ami-2272864b	amazon/amzn-ami-0.9.9-beta.x86_64-ebs	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-8926ffe3	10	
+IMAGE	ami-76f0061f	amazon/amzn-ami-2010.11.1-beta.i386-ebs	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-cba692a1	8	
+IMAGE	ami-74f0061d	amazon/amzn-ami-2010.11.1-beta.x86_64-ebs	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-ffa69295	8	
+IMAGE	ami-8c1fece5	amazon/amzn-ami-2011.02.1.i386-ebs	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-22fc264e	8	
+IMAGE	ami-8e1fece7	amazon/amzn-ami-2011.02.1.x86_64-ebs	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-a6fc26ca	8	
+IMAGE	ami-321eed5b	amazon/amzn-hvm-ami-2011.02.1-beta.x86_64-ext4	amazon	available	public		x86_64	machine				ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-7a18c216	8	
+IMAGE	ami-7813e011	amazon/CloudFormation-drupal_7.0_1.0_74f0061d-64bit-20110223-2127	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-4e14ca22	8	
+IMAGE	ami-6213e00b	amazon/CloudFormation-drupal_7.0_1.0_76f0061f-32bit-20110223-2125	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-1617c97a	8	
+IMAGE	ami-2463904d	amazon/CloudFormation-drupal_7.0_1.1_74f0061d-64bit-20110228-0402	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-cc5df6a0	8	
+IMAGE	ami-20639049	amazon/CloudFormation-drupal_7.0_1.1_76f0061f-32bit-20110228-0401	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-205df64c	8	
+IMAGE	ami-7a11e213	amazon/CloudFormation-gettingstarted_5.3.3_1.0_74f0061d-64bit-20110223-2341	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-627da30e	8	
+IMAGE	ami-6411e20d	amazon/CloudFormation-gettingstarted_5.3.3_1.0_76f0061f-32bit-20110223-2340	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-227ca24e	8	
+IMAGE	ami-2213e04b	amazon/CloudFormation-gollum_1.1.1_1.0_74f0061d-64bit-20110223-2145	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-e00ad48c	8	
+IMAGE	ami-2613e04f	amazon/CloudFormation-gollum_1.1.1_1.0_76f0061f-32bit-20110223-2145	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-6c0bd500	8	
+IMAGE	ami-c213e0ab	amazon/CloudFormation-hwphp_5.3.3_1.0_74f0061d-64bit-20110223-2205	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-a83be5c4	8	
+IMAGE	ami-c813e0a1	amazon/CloudFormation-hwphp_5.3.3_1.0_76f0061f-32bit-20110223-2202	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-e63ae48a	8	
+IMAGE	ami-da11e2b3	amazon/CloudFormation-hwrails_2.3.2_1.0_74f0061d-64bit-20110224-0020	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-1c934a70	8	
+IMAGE	ami-d411e2bd	amazon/CloudFormation-hwrails_2.3.2_1.0_76f0061f-32bit-20110224-0021	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-58924b34	8	
+IMAGE	ami-3014e759	amazon/CloudFormation-insoshi_1.0.0_1.0_74f0061d-64bit-20110224-0721	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-ba19c1d6	8	
+IMAGE	ami-3e14e757	amazon/CloudFormation-insoshi_1.0.0_1.0_76f0061f-32bit-20110224-0718	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-e018c08c	8	
+IMAGE	ami-8211e2eb	amazon/CloudFormation-joomla_1.6.0_1.0_74f0061d-64bit-20110224-0043	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-888059e4	8	
+IMAGE	ami-8e11e2e7	amazon/CloudFormation-joomla_1.6.0_1.0_76f0061f-32bit-20110224-0041	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-b48158d8	8	
+IMAGE	ami-ac10e3c5	amazon/CloudFormation-redmine_1.1.1_1.0_74f0061d-64bit-20110224-0148	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-44d00928	8	
+IMAGE	ami-b210e3db	amazon/CloudFormation-redmine_1.1.1_1.0_76f0061f-32bit-20110224-0152	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-00d20b6c	8	
+IMAGE	ami-6e17e407	amazon/CloudFormation-tracks_1.7.2_1.0_74f0061d-64bit-20110224-0212	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-60c61f0c	8	
+IMAGE	ami-7017e419	amazon/CloudFormation-tracks_1.7.2_1.0_76f0061f-32bit-20110224-0215	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-b4f920d8	8	
+IMAGE	ami-f617e49f	amazon/CloudFormation-wordpress_3.0.4_1.0_74f0061d-64bit-20110224-0259	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-2818c144	8	
+IMAGE	ami-f417e49d	amazon/CloudFormation-wordpress_3.0.4_1.0_76f0061f-32bit-20110224-0258	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-14e73e78	8	
+IMAGE	ami-7ea24a17	amazon/EC2 CentOS 5.4 HVM AMI	amazon	available	public		x86_64	machine				ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-1099e578	20	
+IMAGE	ami-aa30c7c3	amazon/EC2 CentOS 5.5 GPU HVM AMI	amazon	available	public		x86_64	machine				ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-8f0c6ae5	20	
+IMAGE	ami-42a2532b	amazon/EC2 CentOS 5.5 GPU HVM AMI (Driver 260.19.29)	amazon	available	public		x86_64	machine				ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-e7c3038a	20	
+IMAGE	ami-7609f81f	amazon/ElasticBeanstalk-Tomcat6-32bit-20110110-1258	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-bdbd23d0	8	
+IMAGE	ami-fafd0d93	amazon/ElasticBeanstalk-Tomcat6-32bit-20110124-1305	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-07f0a36a	8	
+IMAGE	ami-2412e24d	amazon/ElasticBeanstalk-Tomcat6-32bit-20110201-1117	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-cfcff2a2	8	
+IMAGE	ami-060fff6f	amazon/ElasticBeanstalk-Tomcat6-32bit-20110203-1551	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-25696e48	8	
+IMAGE	ami-4825d621	amazon/ElasticBeanstalk-Tomcat6-32bit-20110222-1752	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-ac62b0c0	8	
+IMAGE	ami-b659aadf	amazon/ElasticBeanstalk-Tomcat6-32bit-20110301-1616	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-ae1aa9c2	8	
+IMAGE	ami-d08476b9	amazon/ElasticBeanstalk-Tomcat6-32bit-20110307-2016	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-c49a0da8	8	
+IMAGE	ami-385daf51	amazon/ElasticBeanstalk-Tomcat6-32bit-20110322-2033	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-e3aefc8f	8	
+IMAGE	ami-eebd4187	amazon/ElasticBeanstalk-Tomcat6-32bit-20110411-1328	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-7528d51a	8	
+IMAGE	ami-80c438e9	amazon/ElasticBeanstalk-Tomcat6-32bit-20110419-1529	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-a99135c6	8	
+IMAGE	ami-5e4db237	amazon/ElasticBeanstalk-Tomcat6-32bit-20110510-1644	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-47ca9b28	8	
+IMAGE	ami-1330f47a	amazon/ElasticBeanstalk-Tomcat6-32bit-20110715-1236	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-856db0e4	8	
+IMAGE	ami-b209f8db	amazon/ElasticBeanstalk-Tomcat6-64bit-20110110-1447	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-dd7ee0b0	8	
+IMAGE	ami-fefd0d97	amazon/ElasticBeanstalk-Tomcat6-64bit-20110124-1307	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-a1faa9cc	8	
+IMAGE	ami-a012e2c9	amazon/ElasticBeanstalk-Tomcat6-64bit-20110201-1158	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-e1b4898c	8	
+IMAGE	ami-100fff79	amazon/ElasticBeanstalk-Tomcat6-64bit-20110203-1556	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-3377705e	8	
+IMAGE	ami-b425d6dd	amazon/ElasticBeanstalk-Tomcat6-64bit-20110222-1909	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-f8b66b94	8	
+IMAGE	ami-2a58ab43	amazon/ElasticBeanstalk-Tomcat6-64bit-20110301-1653	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-28f04244	8	
+IMAGE	ami-aa8476c3	amazon/ElasticBeanstalk-Tomcat6-64bit-20110307-2020	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-5c841330	8	
+IMAGE	ami-005daf69	amazon/ElasticBeanstalk-Tomcat6-64bit-20110322-2041	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-4bd68427	8	
+IMAGE	ami-cabd41a3	amazon/ElasticBeanstalk-Tomcat6-64bit-20110411-1337	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-7f23de10	8	
+IMAGE	ami-b8c539d1	amazon/ElasticBeanstalk-Tomcat6-64bit-20110419-1653	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-1357f37c	8	
+IMAGE	ami-424db22b	amazon/ElasticBeanstalk-Tomcat6-64bit-20110510-1641	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-61c8990e	8	
+IMAGE	ami-f131f598	amazon/ElasticBeanstalk-Tomcat6-64bit-20110715-1337	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-e7b16d86	8	
+IMAGE	ami-a4c539cd	amazon/ElasticBeanstalk-Tomcat7-32bit-20110419-1652	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-bf56f2d0	8	
+IMAGE	ami-524db23b	amazon/ElasticBeanstalk-Tomcat7-32bit-20110510-1645	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-a3ca9bcc	8	
+IMAGE	ami-1b30f472	amazon/ElasticBeanstalk-Tomcat7-32bit-20110715-1233	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-5173ae30	8	
+IMAGE	ami-4ad72b23	amazon/ElasticBeanstalk-Tomcat7-64bit-20110418-1746	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-194f9676	8	
+IMAGE	ami-404db229	amazon/ElasticBeanstalk-Tomcat7-64bit-20110510-1640	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-b1c998de	8	
+IMAGE	ami-f331f59a	amazon/ElasticBeanstalk-Tomcat7-64bit-20110715-1337	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-6bb26e0a	8	
+IMAGE	ami-84db39ed	amazon/fedora-8-i386-v1.14-std	amazon	available	public		i386	machine	aki-94c527fd	ari-96c527ff		ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-b9aa35d0	15	
+IMAGE	ami-86db39ef	amazon/fedora-8-x86_64-v1.14-std	amazon	available	public		x86_64	machine	aki-54ce2c3d	ari-56ce2c3f		ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-bbaa35d2	15	
+IMAGE	ami-b232d0db	amazon/getting-started-with-ebs-boot	amazon	available	public		i386	machine	aki-94c527fd	ari-96c527ff		ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-a08912c9	15	
+IMAGE	ami-16a3577f	amazon/sles-10-sp3-v1.00.i386	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-589a9633	15	
+IMAGE	ami-eea35787	amazon/sles-10-sp3-v1.00.x86_64	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-8e2729e5	15	
+IMAGE	ami-6e649707	amazon/sles-11-sp1-hvm-v1.00.x86_64	amazon	available	public		x86_64	machine				ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-6ca71300	10	
+IMAGE	ami-e4a7558d	amazon/sles-11-sp1-hvm-v1.01.x86_64	amazon	available	public		x86_64	machine				ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-c07ffeac	10	
+IMAGE	ami-e0a35789	amazon/sles-11-sp1-v1.00.i386	amazon	available	public		i386	machine	aki-407d9529			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-64909c0f	15	
+IMAGE	ami-e4a3578d	amazon/sles-11-sp1-v1.00.x86_64	amazon	available	public		x86_64	machine	aki-427d952b			ebs	paravirtual	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-20aaa64b	15	
+IMAGE	ami-de24d6b7	amazon/Windows-2008R2-SP1-Base-Locale-JA-JP-v101	amazon	available	public		x86_64	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-3e2c5e52	35	
+IMAGE	ami-d024d6b9	amazon/Windows-2008R2-SP1-Base-Locale-KO-KR-v101	amazon	available	public		x86_64	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-022c5e6e	35	
+IMAGE	ami-b424d6dd	amazon/Windows-2008R2-SP1-Base-Locale-ZH-CN-v101	amazon	available	public		x86_64	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-4612602a	35	
+IMAGE	ami-b624d6df	amazon/Windows-2008R2-SP1-Base-Locale-ZH-HK-v101	amazon	available	public		x86_64	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-5a126036	35	
+IMAGE	ami-98ef1df1	amazon/Windows-2008R2-SP1-Core-v101	amazon	available	public		x86_64	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-1af16b76	16	
+IMAGE	ami-1cbd4475	amazon/Windows-2008R2-SP1-English-Base-v103	amazon	available	public		x86_64	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-2098704e	35	
+IMAGE	ami-42bd442b	amazon/Windows-2008R2-SP1-English-SQLExpress-v102	amazon	available	public		x86_64	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-ec896182	35	
+IMAGE	ami-baed1fd3	amazon/Windows-2008R2-SP1-English-SQLStandard-v101	amazon	available	public		x86_64	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-26de574a	35	
+IMAGE	ami-988577f1	amazon/Windows-2008R2-SP1-MultiLang-Base-v101	amazon	available	public		x86_64	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-d035a2bc	35	
+IMAGE	ami-0a8a7863	amazon/Windows-2008R2-SP1-MultiLang-SQLExpress-v101	amazon	available	public		x86_64	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-12cb5d7e	35	
+IMAGE	ami-0e8a7867	amazon/Windows-2008R2-SP1-MultiLang-SQLStandard-v101	amazon	available	public		x86_64	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-f8f56394	35	
+IMAGE	ami-f11ff098	amazon/Windows-Server2003R2-i386-Base-v109	amazon	available	public		i386	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-7d5f4914	30	
+IMAGE	ami-f31ff09a	amazon/Windows-Server2003R2-i386-SqlExpress-v109	amazon	available	public		i386	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-735f491a	30	
+IMAGE	ami-f51ff09c	amazon/Windows-Server2003R2-x86_64-Base-v109	amazon	available	public		x86_64	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-755f491c	30	
+IMAGE	ami-f71ff09e	amazon/Windows-Server2003R2-x86_64-SqlExpress-v109	amazon	available	public		x86_64	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-495f4920	30	
+IMAGE	ami-c91ff0a0	amazon/Windows-Server2003R2-x86_64-SqlStandard-v109	amazon	available	public		x86_64	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-4d5f4924	30	
+IMAGE	ami-92ba43fb	amazon/Windows-Server2008-i386-Base-v104	amazon	available	public		i386	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-7cb35b12	30	
+IMAGE	ami-c5e40dac	amazon/Windows-Server2008-i386-SqlExpress-v103	amazon	available	public		i386	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-5c9c2734	30	
+IMAGE	ami-62bd440b	amazon/Windows-Server2008-x86_64-Base-v104	amazon	available	public		x86_64	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-b8b35bd6	30	
+IMAGE	ami-dbe40db2	amazon/Windows-Server2008-x86_64-SqlExpress-v103	amazon	available	public		x86_64	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-229c274a	30	
+IMAGE	ami-dde40db4	amazon/Windows-Server2008-x86_64-SqlStandard-v103	amazon	available	public		x86_64	machine			windows	ebs	hvm	xen
+BLOCKDEVICEMAPPING	/dev/sda1		snap-349c275c	30	
+IMAGE	ami-daf005b3	amazon/amzn-ami-0.9.7-beta.i386-S3	amazon	available	public		i386	machine	aki-407d9529			instance-store	paravirtual	xen
+IMAGE	ami-d8f005b1	amazon/amzn-ami-0.9.7-beta.x86_64-S3	amazon	available	public		x86_64	machine	aki-427d952b			instance-store	paravirtual	xen
+IMAGE	ami-8ec035e7	amazon/amzn-ami-0.9.8-beta.i386-S3	amazon	available	public		i386	machine	aki-407d9529			instance-store	paravirtual	xen
+IMAGE	ami-8cc035e5	amazon/amzn-ami-0.9.8-beta.x86_64-S3	amazon	available	public		x86_64	machine	aki-427d952b			instance-store	paravirtual	xen
+IMAGE	ami-987185f1	amazon/amzn-ami-0.9.9-beta.i386-S3	amazon	available	public		i386	machine	aki-407d9529			instance-store	paravirtual	xen
+IMAGE	ami-827185eb	amazon/amzn-ami-0.9.9-beta.x86_64-S3	amazon	available	public		x86_64	machine	aki-427d952b			instance-store	paravirtual	xen
+IMAGE	ami-d59d6bbc	amazon/amzn-ami-2010.11.1-beta.i386-S3	amazon	available	public		i386	machine	aki-407d9529			instance-store	paravirtual	xen
+IMAGE	ami-a99d6bc0	amazon/amzn-ami-2010.11.1-beta.x86_64-S3	amazon	available	public		x86_64	machine	aki-427d952b			instance-store	paravirtual	xen
+IMAGE	ami-2a1fec43	amazon/amzn-ami-2011.02.1.i386-S3	amazon	available	public		i386	machine	aki-407d9529			instance-store	paravirtual	xen
+IMAGE	ami-221fec4b	amazon/amzn-ami-2011.02.1.x86_64-S3	amazon	available	public		x86_64	machine	aki-427d952b			instance-store	paravirtual	xen
+IMAGE	ami-d1ca2db8	aws-toolkit-for-eclipse-amis-us/haproxy-v1.0.2.manifest.xml	amazon	available	public		i386	machine	aki-a71cf9ce	ari-a51cf9cc		instance-store	paravirtual	xen
+IMAGE	ami-11ca2d78	aws-toolkit-for-eclipse-amis-us/tomcat-v1.0.0.manifest.xml	amazon	available	public		i386	machine	aki-a71cf9ce	ari-a51cf9cc		instance-store	paravirtual	xen
+IMAGE	ami-26b3484f	ec2-ibm-informix-us-east-1/informix-11.50.express.manifest.xml	amazon	available	public	D6F6052A	i386	machine	aki-407d9529			instance-store	paravirtual	xen
+IMAGE	ami-00fe0569	ec2-ibm-informix-us-east-1/informix-11.50.growth.manifest.xml	amazon	available	public	1F691706	x86_64	machine	aki-427d952b			instance-store	paravirtual	xen
+IMAGE	ari-20a55449	ec2-ibm-lotus-us-east/initrd-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	619363EB	x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-54cb393d	ec2-ibm-lotus-us-east/initrd-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	476D29CB	x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-70916219	ec2-ibm-lotus-us-east/initrd-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	8FCE3EEB	x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-fe916297	ec2-ibm-lotus-us-east/initrd-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	CBBD347F	x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	aki-52cb393b	ec2-ibm-lotus-us-east/vmlinuz-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	476D29CB	x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-5ea55437	ec2-ibm-lotus-us-east/vmlinuz-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	619363EB	x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-7e916217	ec2-ibm-lotus-us-east/vmlinuz-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	8FCE3EEB	x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-f491629d	ec2-ibm-lotus-us-east/vmlinuz-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	CBBD347F	x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	ami-9e9667f7	ec2-ibm-lotus-us-east/wp70_prod_wcm_20101118.manifest.xml	amazon	available	public	619363EB	x86_64	machine	aki-5ea55437	ari-20a55449		instance-store	paravirtual	xen
+IMAGE	ami-4e916227	ec2-ibm-lotus-us-east/wp70_prod_wcmse_20101119.manifest.xml	amazon	available	public	8FCE3EEB	x86_64	machine	aki-7e916217	ari-70916219		instance-store	paravirtual	xen
+IMAGE	ami-cc9162a5	ec2-ibm-lotus-us-east/wp70_production_20101117.manifest.xml	amazon	available	public	CBBD347F	x86_64	machine	aki-f491629d	ari-fe916297		instance-store	paravirtual	xen
+IMAGE	ami-2ccb3945	ec2-ibm-lotus-us-east/wpse70_production_20101119.manifest.xml	amazon	available	public	476D29CB	x86_64	machine	aki-52cb393b	ari-54cb393d		instance-store	paravirtual	xen
+IMAGE	ami-74e00d1d	ec2-paid-ibm-images-db2/ibm-db2-express-9.7.FP1-32-bit.manifest.xml	amazon	available	public	A481895D	i386	machine	aki-bce60bd5	ari-88e60be1		instance-store	paravirtual	xen
+IMAGE	ami-6a807503	ec2-paid-ibm-images-db2/ibm-db2-express-9.7.FP2-32-bit.manifest.xml	amazon	available	public	A481895D	i386	machine	aki-9ed53ff7	ari-868174ef		instance-store	paravirtual	xen
+IMAGE	ami-808372e9	ec2-paid-ibm-images-db2/ibm-db2-express-9.7.FP3a-32-bit.manifest.xml	amazon	available	public	A481895D	i386	machine	aki-9ed53ff7	ari-868174ef		instance-store	paravirtual	xen
+IMAGE	ami-809068e9	ec2-paid-ibm-images-db2/ibm-db2-express-9.7.FP4-32-bit.manifest.xml	amazon	available	public	A481895D	i386	machine	aki-407d9529			instance-store	paravirtual	xen
+IMAGE	ami-cefd10a7	ec2-paid-ibm-images-db2/ibm-db2-workgroup-9.7.FP1-64-bit.manifest.xml	amazon	available	public	EA5F05A3	x86_64	machine	aki-f8fd1091	ari-fcfd1095		instance-store	paravirtual	xen
+IMAGE	ami-5c807535	ec2-paid-ibm-images-db2/ibm-db2-workgroup-9.7.FP2-64-bit.manifest.xml	amazon	available	public	EA5F05A3	x86_64	machine	aki-b28174db	ari-888174e1		instance-store	paravirtual	xen
+IMAGE	ami-887c8de1	ec2-paid-ibm-images-db2/ibm-db2-workgroup-9.7.FP3a-64-bit.manifest.xml	amazon	available	public	EA5F05A3	x86_64	machine	aki-b28174db	ari-888174e1		instance-store	paravirtual	xen
+IMAGE	ami-de926ab7	ec2-paid-ibm-images-db2/ibm-db2-workgroup-9.7.FP4-64-bit.manifest.xml	amazon	available	public	EA5F05A3	x86_64	machine	aki-427d952b			instance-store	paravirtual	xen
+IMAGE	ari-868174ef	ec2-paid-ibm-images-db2/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public		i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-88e60be1	ec2-paid-ibm-images-db2/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	A481895D	i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-888174e1	ec2-paid-ibm-images-db2/initrd-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public		x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-fcfd1095	ec2-paid-ibm-images-db2/initrd-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	EA5F05A3	x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	aki-9ed53ff7	ec2-paid-ibm-images-db2/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-bce60bd5	ec2-paid-ibm-images-db2/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	A481895D	i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-b28174db	ec2-paid-ibm-images-db2/vmlinuz-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public		x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-f8fd1091	ec2-paid-ibm-images-db2/vmlinuz-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	EA5F05A3	x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	ari-0c51b365	ec2-paid-ibm-images-ids/initrd-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	A9408B4B	x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	aki-0251b36b	ec2-paid-ibm-images-ids/vmlinuz-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	A9408B4B	x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	ami-f8ad4091	ec2-paid-ibm-images-infosphere/ibm-infosphere-datastage-qualitystage-server-64bit.manifest.xml	amazon	available	public	21E9EBC9	x86_64	machine	aki-f858ba91	ari-f458ba9d		instance-store	paravirtual	xen
+IMAGE	ari-f458ba9d	ec2-paid-ibm-images-infosphere/initrd-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	21E9EBC9	x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	aki-f858ba91	ec2-paid-ibm-images-infosphere/vmlinuz-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	21E9EBC9	x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	ami-4d48af24	ec2-paid-ibm-images/db2-express-32-bit.manifest.xml	amazon	available	public	A481895D	i386	machine	aki-8149aee8	ari-7748af1e		instance-store	paravirtual	xen
+IMAGE	ami-ac1cfcc5	ec2-paid-ibm-images/db2-express-9.7-32-bit.manifest.xml	amazon	available	public	A481895D	i386	machine	aki-9feb0bf6	ari-91eb0bf8		instance-store	paravirtual	xen
+IMAGE	ami-4c48af25	ec2-paid-ibm-images/db2-workgroup-64-bit.manifest.xml	amazon	available	public	EA5F05A3	x86_64	machine	aki-8549aeec	ari-7648af1f		instance-store	paravirtual	xen
+IMAGE	ami-a21cfccb	ec2-paid-ibm-images/db2-workgroup-9.7-64-bit.manifest.xml	amazon	available	public	EA5F05A3	x86_64	machine	aki-6bec0c02	ari-6dec0c04		instance-store	paravirtual	xen
+IMAGE	ami-a8e705c1	ec2-paid-ibm-images/ibm-infosphere-is-winclient.manifest.xml	amazon	available	public	EC129708	i386	machine			windows	instance-store	hvm	xen
+IMAGE	ami-35d3305c	ec2-paid-ibm-images/ibm-lotus-forms-turbo-3.5.1-32-bit.manifest.xml	amazon	available	public	578BF5BA	i386	machine	aki-2dd33044	ari-21d33048		instance-store	paravirtual	xen
+IMAGE	ami-fef01297	ec2-paid-ibm-images/ibm-mashup-center-2.0-32-bit.manifest.xml	amazon	available	public	D662E989	i386	machine	aki-f8f01291	ari-faf01293		instance-store	paravirtual	xen
+IMAGE	ami-5248a83b	ec2-paid-ibm-images/ibm-tivoli-itm-06.21.03.00-32b-200.manifest.xml	amazon	available	public	CCEB368B	i386	machine	aki-7c48a815	ari-6448a80d		instance-store	paravirtual	xen
+IMAGE	ami-5048a839	ec2-paid-ibm-images/ibm-tivoli-itm-06.21.03.00-32b-50.manifest.xml	amazon	available	public	49CA7305	i386	machine	aki-6848a801	ari-6c48a805		instance-store	paravirtual	xen
+IMAGE	ami-064cac6f	ec2-paid-ibm-images/ibm-tivoli-itm-06.21.03.00-32b-600.manifest.xml	amazon	available	public	80ED00B8	i386	machine	aki-7e48a817	ari-6648a80f		instance-store	paravirtual	xen
+IMAGE	ami-244aad4d	ec2-paid-ibm-images/informix-dynamic-server-express-32-bit.manifest.xml	amazon	available	public	D6F6052A	i386	machine	aki-b34bacda	ari-b24bacdb		instance-store	paravirtual	xen
+IMAGE	ami-434aad2a	ec2-paid-ibm-images/informix-dynamic-server-workgroup-edition-64-bit.manifest.xml	amazon	available	public	A9408B4B	x86_64	machine	aki-db4bacb2	ari-dd4bacb4		instance-store	paravirtual	xen
+IMAGE	ari-21d33048	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	578BF5BA	i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-3238da5b	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public		i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-4f58b926	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public		i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-604aa809	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public		i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-61779408	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	D6FB1113	i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-6448a80d	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	CCEB368B	i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-6451b30d	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	D6F6052A	i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-6591710c	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public		i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-6648a80f	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	80ED00B8	i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-6c48a805	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	49CA7305	i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-7448af1d	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	D6FB1113	i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-7748af1e	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	A481895D	i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-813fdee8	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	578BF5BA	i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-91eb0bf8	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	A481895D	i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-9a7090f3	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	E3D48CEE	i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-9f3fdef6	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	D662E989	i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-b24bacdb	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	D6F6052A	i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-bde707d4	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public		i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-faf01293	ec2-paid-ibm-images/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	D662E989	i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-024aa86b	ec2-paid-ibm-images/initrd-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public		x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-4848af21	ec2-paid-ibm-images/initrd-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	8FCE3EEB	x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-4948af20	ec2-paid-ibm-images/initrd-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	476D29CB	x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-6dec0c04	ec2-paid-ibm-images/initrd-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	EA5F05A3	x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-7648af1f	ec2-paid-ibm-images/initrd-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	EA5F05A3	x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-baf210d3	ec2-paid-ibm-images/initrd-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public		x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-dd4bacb4	ec2-paid-ibm-images/initrd-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	A9408B4B	x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ami-4d4fae24	ec2-paid-ibm-images/lotus-forms-turbo-32-bit.manifest.xml	amazon	available	public	578BF5BA	i386	machine	aki-8b3fdee2	ari-813fdee8		instance-store	paravirtual	xen
+IMAGE	ami-db5cbdb2	ec2-paid-ibm-images/lotus-mashup-center-32-bit.manifest.xml	amazon	available	public	D662E989	i386	machine	aki-9b3fdef2	ari-9f3fdef6		instance-store	paravirtual	xen
+IMAGE	ami-6c55b205	ec2-paid-ibm-images/lotus-web-content-management-standard-edition-64-bit.manifest.xml	amazon	available	public	8FCE3EEB	x86_64	machine	aki-8249aeeb	ari-4848af21		instance-store	paravirtual	xen
+IMAGE	aki-12f0127b	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-2dd33044	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	578BF5BA	i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-3038da59	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-4d58b924	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-6051b309	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	D6F6052A	i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-6248a80b	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-6848a801	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	49CA7305	i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-6f779406	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	D6FB1113	i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-6f917106	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-7c48a815	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	CCEB368B	i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-7e48a817	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	80ED00B8	i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-8049aee9	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	D6FB1113	i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-8149aee8	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	A481895D	i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-867090ef	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	E3D48CEE	i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-8b3fdee2	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	578BF5BA	i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-9645a7ff	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-9b3fdef2	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	D662E989	i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-9feb0bf6	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	A481895D	i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-b34bacda	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	D6F6052A	i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-b9e707d0	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-f8f01291	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	D662E989	i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-0a4aa863	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public		x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-6bec0c02	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	EA5F05A3	x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-8249aeeb	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	8FCE3EEB	x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-8349aeea	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	476D29CB	x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-8549aeec	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	EA5F05A3	x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-a6f210cf	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public		x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-db4bacb2	ec2-paid-ibm-images/vmlinuz-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public	A9408B4B	x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	ami-6671910f	ec2-paid-ibm-images/websphere-application-server-7.0.0.3-32-bit.manifest.xml	amazon	available	public	E3D48CEE	i386	machine	aki-867090ef	ari-9a7090f3		instance-store	paravirtual	xen
+IMAGE	ami-1000e279	ec2-paid-ibm-images/websphere-application-server-7.0.0.7-32bit.manifest.xml	amazon	available	public	E3D48CEE	i386	machine	aki-3038da59	ari-3238da5b		instance-store	paravirtual	xen
+IMAGE	ami-6f55b206	ec2-paid-ibm-images/websphere-portal-and-lotus-web-content-management-standard-edition-64-bit.manifest.xml	amazon	available	public	476D29CB	x86_64	machine	aki-8349aeea	ari-4948af20		instance-store	paravirtual	xen
+IMAGE	ami-6776950e	ec2-paid-ibm-images/websphere-smash-1.1.1.1-32-bit.manifest.xml	amazon	available	public	D6FB1113	i386	machine	aki-6f779406	ari-61779408		instance-store	paravirtual	xen
+IMAGE	ami-b454b3dd	ec2-paid-ibm-images/websphere-smash-32-bit.manifest.xml	amazon	available	public	D6FB1113	i386	machine	aki-8049aee9	ari-7448af1d		instance-store	paravirtual	xen
+IMAGE	ari-42907a2b	ec2-paid-ibm-was-us-east-1/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public		i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-d76881be	ec2-paid-ibm-was-us-east-1/initrd-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	E3D48CEE	i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-e6bc478f	ec2-paid-ibm-was-us-east-1/initrd-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public		x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	aki-4a907a23	ec2-paid-ibm-was-us-east-1/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-dd6881b4	ec2-paid-ibm-was-us-east-1/vmlinuz-2.6.16.60-0.29-xenpae.i386.manifest.xml	amazon	available	public	E3D48CEE	i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-eabc4783	ec2-paid-ibm-was-us-east-1/vmlinuz-2.6.16.60-0.30-xen.x86_64.manifest.xml	amazon	available	public		x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	ami-58977d31	ec2-paid-ibm-was-us-east-1/websphere-application-server-7.0.0.11-32bit.manifest.xml	amazon	available	public	E3D48CEE	i386	machine	aki-4a907a23	ari-42907a2b		instance-store	paravirtual	xen
+IMAGE	ami-316a8358	amazon/websphere-application-server-7.0.0.9-32bit	amazon	available	public	E3D48CEE	i386	machine	aki-dd6881b4	ari-d76881be		instance-store	paravirtual	xen
+IMAGE	ami-2c5fba45	ec2-public-images/demo-paid-AMI-v1.07.manifest.xml	amazon	available	public	A79EC0DB	i386	machine				instance-store	paravirtual	xen
+IMAGE	ami-bd9d78d4	ec2-public-images/demo-paid-AMI.manifest.xml	amazon	available	public	A79EC0DB	i386	machine				instance-store	paravirtual	xen
+IMAGE	ami-2f5fba46	ec2-public-images/developer-image-i386-v1.07.manifest.xml	amazon	available	public		i386	machine				instance-store	paravirtual	xen
+IMAGE	ami-26b6534f	ec2-public-images/developer-image.manifest.xml	amazon	available	public		i386	machine				instance-store	paravirtual	xen
+IMAGE	ari-a51cf9cc	ec2-public-images/ec2-initrd-2.6.21.7-2.fc8xen.i386.manifest.xml	amazon	available	public		i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-b31cf9da	ec2-public-images/ec2-initrd-2.6.21.7-2.fc8xen.x86_64.manifest.xml	amazon	available	public		x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	aki-a71cf9ce	ec2-public-images/ec2-vmlinuz-2.6.21.7-2.fc8xen.i386.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-b51cf9dc	ec2-public-images/ec2-vmlinuz-2.6.21.7-2.fc8xen.x86_64.manifest.xml	amazon	available	public		x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	ami-f51aff9c	ec2-public-images/fedora-8-i386-base-v1.06.manifest.xml	amazon	available	public		i386	machine	aki-a71cf9ce	ari-a51cf9cc		instance-store	paravirtual	xen
+IMAGE	ami-2b5fba42	ec2-public-images/fedora-8-i386-base-v1.07.manifest.xml	amazon	available	public		i386	machine	aki-a71cf9ce	ari-a51cf9cc		instance-store	paravirtual	xen
+IMAGE	ami-5647a33f	ec2-public-images/fedora-8-i386-base-v1.08.manifest.xml	amazon	available	public		i386	machine	aki-a71cf9ce	ari-a51cf9cc		instance-store	paravirtual	xen
+IMAGE	ami-48aa4921	ec2-public-images/fedora-8-i386-base-v1.10.manifest.xml	amazon	available	public		i386	machine	aki-6eaa4907	ari-42b95a2b		instance-store	paravirtual	xen
+IMAGE	ami-f21aff9b	ec2-public-images/fedora-8-x86_64-base-v1.06.manifest.xml	amazon	available	public		x86_64	machine	aki-b51cf9dc	ari-b31cf9da		instance-store	paravirtual	xen
+IMAGE	ami-2a5fba43	ec2-public-images/fedora-8-x86_64-base-v1.07.manifest.xml	amazon	available	public		x86_64	machine	aki-b51cf9dc	ari-b31cf9da		instance-store	paravirtual	xen
+IMAGE	ami-2547a34c	ec2-public-images/fedora-8-x86_64-base-v1.08.manifest.xml	amazon	available	public		x86_64	machine	aki-b51cf9dc	ari-b31cf9da		instance-store	paravirtual	xen
+IMAGE	ami-f61dfd9f	ec2-public-images/fedora-8-x86_64-base-v1.10.manifest.xml	amazon	available	public		x86_64	machine	aki-a3d737ca	ari-7cb95a15		instance-store	paravirtual	xen
+IMAGE	ami-a21affcb	ec2-public-images/fedora-core-6-x86_64-base-v1.06.manifest.xml	amazon	available	public		x86_64	machine	aki-a53adfcc	ari-a23adfcb		instance-store	paravirtual	xen
+IMAGE	ami-2d5fba44	ec2-public-images/fedora-core-6-x86_64-base-v1.07.manifest.xml	amazon	available	public		x86_64	machine	aki-a53adfcc	ari-a23adfcb		instance-store	paravirtual	xen
+IMAGE	ami-225fba4b	ec2-public-images/fedora-core4-apache-mysql-v1.07.manifest.xml	amazon	available	public		i386	machine				instance-store	paravirtual	xen
+IMAGE	ami-25b6534c	ec2-public-images/fedora-core4-apache-mysql.manifest.xml	amazon	available	public		i386	machine				instance-store	paravirtual	xen
+IMAGE	ami-2e5fba47	ec2-public-images/fedora-core4-apache-v1.07.manifest.xml	amazon	available	public		i386	machine				instance-store	paravirtual	xen
+IMAGE	ami-23b6534a	ec2-public-images/fedora-core4-apache.manifest.xml	amazon	available	public		i386	machine				instance-store	paravirtual	xen
+IMAGE	ami-215fba48	ec2-public-images/fedora-core4-base-v1.07.manifest.xml	amazon	available	public		i386	machine				instance-store	paravirtual	xen
+IMAGE	ami-20b65349	ec2-public-images/fedora-core4-base.manifest.xml	amazon	available	public		i386	machine				instance-store	paravirtual	xen
+IMAGE	ami-205fba49	ec2-public-images/fedora-core4-i386-base-v1.07.manifest.xml	amazon	available	public		i386	machine	aki-9b00e5f2			instance-store	paravirtual	xen
+IMAGE	ami-255fba4c	ec2-public-images/fedora-core4-mysql-v1.07.manifest.xml	amazon	available	public		i386	machine				instance-store	paravirtual	xen
+IMAGE	ami-22b6534b	ec2-public-images/fedora-core4-mysql.manifest.xml	amazon	available	public		i386	machine				instance-store	paravirtual	xen
+IMAGE	ami-36ff1a5f	ec2-public-images/fedora-core6-base-x86_64.manifest.xml	amazon	available	public		x86_64	machine				instance-store	paravirtual	xen
+IMAGE	ami-235fba4a	ec2-public-images/getting-started-v1.07.manifest.xml	amazon	available	public		i386	machine				instance-store	paravirtual	xen
+IMAGE	ami-3c47a355	ec2-public-images/getting-started.manifest.xml	amazon	available	public		i386	machine	aki-a71cf9ce	ari-a51cf9cc		instance-store	paravirtual	xen
+IMAGE	ari-67b95e0e	ec2-public-images/initrd-2.6.18-xenU-ec2-v1.0.i386.ari.manifest.xml	amazon	available	public		i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-64b95e0d	ec2-public-images/initrd-2.6.18-xenU-ec2-v1.0.x86_64.ari.manifest.xml	amazon	available	public		x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-dbc121b2	ec2-public-images/initrd-2.6.18-xenU-ec2-v1.2.i386.ari.manifest.xml	amazon	available	public		i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-e3c1218a	ec2-public-images/initrd-2.6.18-xenU-ec2-v1.2.x86_64.ari.manifest.xml	amazon	available	public		x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-2242a04b	amazon/initrd-2.6.18-xenU-ec2-v1.4.i686.ari.manifest.xml	amazon	available	public		i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-2c42a045	amazon/initrd-2.6.18-xenU-ec2-v1.4.x86_64.ari.manifest.xml	amazon	available	public		x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-f606f39f	amazon/initrd-2.6.18-xenU-ec2-v1.5-i686.ari.manifest.xml	amazon	available	public		i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-f406f39d	amazon/initrd-2.6.18-xenU-ec2-v1.5-x86_64.ari.manifest.xml	amazon	available	public		x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-a23adfcb	ec2-public-images/initrd-2.6.20-1.3002.fc6xen.ari.manifest.xml	amazon	available	public		x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-96c527ff	ec2-public-images/initrd-2.6.21.7-2.ec2.v1.2.fc8xen.i686.ari.manifest.xml	amazon	available	public		i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-56ce2c3f	ec2-public-images/initrd-2.6.21.7-2.ec2.v1.2.fc8xen.x86_64.ari.manifest.xml	amazon	available	public		x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-0ccd3965	ec2-public-images/initrd-2.6.21.7-2.ec2.v1.3.fc8xen.i686.img.manifest.xml	amazon	available	public		i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-580bfe31	amazon/initrd-2.6.21.7-2.ec2.v1.3.fc8xen.x86_64.img.manifest.xml	amazon	available	public		x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-42b95a2b	ec2-public-images/initrd-2.6.21.7-2.fc8xen-ec2-v1.0.1.i386.ari.manifest.xml	amazon	available	public		i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-7cb95a15	ec2-public-images/initrd-2.6.21.7-2.fc8xen-ec2-v1.0.1.x86_64.ari.manifest.xml	amazon	available	public		x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-e7dc3c8e	ec2-public-images/initrd-2.6.21.7-2.fc8xen-ec2-v1.0.i386.ari.manifest.xml	amazon	available	public		i386	ramdisk				instance-store	paravirtual	xen
+IMAGE	ari-4fdf3f26	ec2-public-images/initrd-2.6.21.7-2.fc8xen-ec2-v1.0.x86_64.ari.manifest.xml	amazon	available	public		x86_64	ramdisk				instance-store	paravirtual	xen
+IMAGE	aki-407d9529	ec2-public-images/pv-grub-hd0-V1.01-i386.gz.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-427d952b	ec2-public-images/pv-grub-hd0-V1.01-x86_64.gz.manifest.xml	amazon	available	public		x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-4c7d9525	ec2-public-images/pv-grub-hd00-V1.01-i386.gz.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-4e7d9527	ec2-public-images/pv-grub-hd00-V1.01-x86_64.gz.manifest.xml	amazon	available	public		x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-525ea73b	ec2-public-images/pv-grub-hd00_1.02-i386.gz.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-8e5ea7e7	ec2-public-images/pv-grub-hd00_1.02-x86_64.gz.manifest.xml	amazon	available	public		x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-805ea7e9	ec2-public-images/pv-grub-hd0_1.02-i386.gz.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-825ea7eb	ec2-public-images/pv-grub-hd0_1.02-x86_64.gz.manifest.xml	amazon	available	public		x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-9b00e5f2	ec2-public-images/vmlinuz-2.6.18-xenU-ec2-v1.0.i386.aki.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-9800e5f1	ec2-public-images/vmlinuz-2.6.18-xenU-ec2-v1.0.x86_64.aki.manifest.xml	amazon	available	public		x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-f5c1219c	ec2-public-images/vmlinuz-2.6.18-xenU-ec2-v1.2.i386.aki.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-e5c1218c	ec2-public-images/vmlinuz-2.6.18-xenU-ec2-v1.2.x86_64.aki.manifest.xml	amazon	available	public		x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-5642a03f	amazon/vmlinuz-2.6.18-xenU-ec2-v1.4.i686.aki.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-2a42a043	amazon/vmlinuz-2.6.18-xenU-ec2-v1.4.x86_64.aki.manifest.xml	amazon	available	public		x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-cc06f3a5	amazon/vmlinuz-2.6.18-xenU-ec2-v1.5-i686.aki.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-f006f399	amazon/vmlinuz-2.6.18-xenU-ec2-v1.5-x86_64.aki.manifest.xml	amazon	available	public		x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-a53adfcc	ec2-public-images/vmlinuz-2.6.20-1.3002.fc6xen.aki.manifest.xml	amazon	available	public		x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-6eaa4907	ec2-public-images/vmlinuz-2.6.21-2.fc8xen-ec2-v1.0.i386.aki.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-a3d737ca	ec2-public-images/vmlinuz-2.6.21-2.fc8xen-ec2-v1.0.x86_64.aki.manifest.xml	amazon	available	public		x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-94c527fd	ec2-public-images/vmlinuz-2.6.21.7-2.ec2.v1.2.fc8xen.i686.aki.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-54ce2c3d	ec2-public-images/vmlinuz-2.6.21.7-2.ec2.v1.2.fc8xen.x86_64.aki.manifest.xml	amazon	available	public		x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	aki-1c669375	amazon/vmlinuz-2.6.21.7-2.ec2.v1.3.fc8xen.manifest.xml	amazon	available	public		i386	kernel				instance-store	paravirtual	xen
+IMAGE	aki-460bfe2f	amazon/vmlinuz-2.6.21.7-2.ec2.v1.3.fc8xen.x86_64.manifest.xml	amazon	available	public		x86_64	kernel				instance-store	paravirtual	xen
+IMAGE	ami-df20c3b6	ec2-public-windows-images/Server2003r2-i386-Win-v1.07.manifest.xml	amazon	available	public		i386	machine			windows	instance-store	hvm	xen
+IMAGE	ami-dd20c3b4	ec2-public-windows-images/Server2003r2-x86_64-Win-v1.07.manifest.xml	amazon	available	public		x86_64	machine			windows	instance-store	hvm	xen
+IMAGE	ami-db20c3b2	ec2-public-windows-images/SqlSvrExp2003r2-i386-Win-v1.07.manifest.xml	amazon	available	public		i386	machine			windows	instance-store	hvm	xen
+IMAGE	ami-d920c3b0	ec2-public-windows-images/SqlSvrExp2003r2-x86_64-Win-v1.07.manifest.xml	amazon	available	public		x86_64	machine			windows	instance-store	hvm	xen
+IMAGE	ami-0535d66c	ec2-public-windows-images/SqlSvrStd2003r2-x86_64-Win-v1.07.manifest.xml	amazon	available	public		x86_64	machine			windows	instance-store	hvm	xen

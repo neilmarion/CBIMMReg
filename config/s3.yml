@@ -1,0 +1,9 @@
+staging:
+  aws_access_key: AKIAI7YCKPLSKW7DBCWQ
+  aws_secret_access_key: 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
+  bucket_base_name: cbimmreg
+
+production:
+  aws_access_key: AKIAI7YCKPLSKW7DBCWQ
+  aws_secret_access_key: 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
+  bucket_base_name: cbimmreg

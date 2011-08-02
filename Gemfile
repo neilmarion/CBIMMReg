@@ -12,6 +12,7 @@ gem 'heroku'
 gem 'jquery-rails'
 gem 'will_paginate'
 gem 'fastercsv'
+gem 'ec2onrails'
 
 
 # Use unicorn as the web server
