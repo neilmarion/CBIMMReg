@@ -8,3 +8,4 @@ require 'rake/dsl_definition'
 require 'rake'
 
 CbimmregP::Application.load_tasks
+
