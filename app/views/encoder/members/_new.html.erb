@@ -18,16 +18,14 @@
       </td>
       <td>
         <div id="schools">
-          <%= m.select :school_id, options_from_collection_for_select(@schools.sort_by(&:name), 'id', 'name') %>
+          <%= m.select :school_id, options_from_collection_for_select(@schools.sort_by(&:name), 'id', 'name'), :id => 'schools_list' %>
         </div>
         <%= text_field_tag :new_school, "Type in school here if not available above" %>
       </td>
       <td>
-<%= form_tag '#', :remote => true do %>
-
-      <%= select_tag :area_id, options_from_collection_for_select(@areas.sort_by(&:name), 'id', 'name'), :id => "schools_filter" %>
-
-<% end %>
+        <%= form_tag '#', :remote => true do %>   
+          <%= select_tag :area_id, options_from_collection_for_select(@areas.sort_by(&:name), 'id', 'name'), :id => "schools_filter" %>
+        <% end %>
         <%= text_field_tag :new_area, "Type in area here if not available above" %>
       </td>
       <td>
