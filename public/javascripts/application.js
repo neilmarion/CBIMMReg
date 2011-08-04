@@ -39,4 +39,16 @@ $(function() {
   });
 });
 
+$(document).ready(function() {
+
+    $('#schools_filter').change(function(){
+      //alert(JSON.stringify( $(this).attr('value') ));
+      $.ajax({type: "post", url: '/encoder/members/filter_schools',
+        data: {'id' : $(this).attr('value') },
+        success: function(data){
+
+          }
+      })
+    });
+  });
 

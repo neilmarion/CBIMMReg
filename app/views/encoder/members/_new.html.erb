@@ -1,11 +1,6 @@
 
 
-<%= form_tag filter_schools_encoder_member_path(:id), :method => :put, :remote => true do %>
-    <td>
-      <%= select_tag :area_id, options_from_collection_for_select(@areas.sort_by(&:name), 'id', 'name') %>
-      <%= submit_tag "submit" %>
-    </td>
-<% end %>
+
 
 
 
@@ -28,7 +23,11 @@
         <%= text_field_tag :new_school, "Type in school here if not available above" %>
       </td>
       <td>
-        <%= m.select :area_id, options_from_collection_for_select(@areas.sort_by(&:name), 'id', 'name') %>
+<%= form_tag '#', :remote => true do %>
+
+      <%= select_tag :area_id, options_from_collection_for_select(@areas.sort_by(&:name), 'id', 'name'), :id => "schools_filter" %>
+
+<% end %>
         <%= text_field_tag :new_area, "Type in area here if not available above" %>
       </td>
       <td>

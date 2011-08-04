@@ -90,8 +90,8 @@ CbimmregP::Application.routes.draw do
 
   namespace :encoder do
     resources :members, :controller => :members do
-      member do
-        put 'filter_schools'
+      collection do
+        post 'filter_schools'
       end
     end
   end

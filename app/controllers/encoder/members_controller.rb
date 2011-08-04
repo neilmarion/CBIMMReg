@@ -47,8 +47,9 @@ class Encoder::MembersController < ApplicationController
   end
 
   def filter_schools
-      @schools = School.find(:all, :conditions =>  "area_id = #{params[:area_id]}")
-      puts "hello"
+      @schools = School.where(:area_id => params[:id])
+      #@schools = School.find(:all, :conditions =>  "area_id = #{params[:id]}")
+      #puts "hello"
 
       respond_to do |format|
         format.js
