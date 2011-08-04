@@ -89,7 +89,11 @@ CbimmregP::Application.routes.draw do
   end
 
   namespace :encoder do
-    resources :members, :controller => :members
+    resources :members, :controller => :members do
+      member do
+        put 'filter_schools'
+      end
+    end
   end
 
   root :to => "home#index"

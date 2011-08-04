@@ -1,3 +1,14 @@
+
+
+<%= form_tag filter_schools_encoder_member_path(:id), :method => :put, :remote => true do %>
+    <td>
+      <%= select_tag :area_id, options_from_collection_for_select(@areas.sort_by(&:name), 'id', 'name') %>
+      <%= submit_tag "submit" %>
+    </td>
+<% end %>
+
+
+
 <% form_for @member, :url => encoder_members_path do |m| %>
   <% @member.errors.full_messages.each do |msg| %>
     <%= msg %>
@@ -11,7 +22,9 @@
         <%= m.text_field :last_name, { :size => 10, :value => "Last Name"} %>
       </td>
       <td>
-        <%= m.select :school_id, options_from_collection_for_select(@schools.sort_by(&:name), 'id', 'name') %>
+        <div id="schools">
+          <%= m.select :school_id, options_from_collection_for_select(@schools.sort_by(&:name), 'id', 'name') %>
+        </div>
         <%= text_field_tag :new_school, "Type in school here if not available above" %>
       </td>
       <td>

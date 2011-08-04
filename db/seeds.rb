@@ -17,7 +17,8 @@ paranaque_schools = ["AMA Computer University", "Baclaran National High School",
 laspinas_schools = ["ABE International College of Business and Accountancy", "Augustinian Abbey School Inc.", "Bernardo College", "Blessed Trinity School", "Bloomfield Academy", "Britanny School of Las-Pinas", "CAA National High School Main (CAANHS Main)", "CAA National High School Annex (CAANHS Annex)", "Camella School", "Colegio de Sta. Monica", "Creative Middle School", "Datamex Institute of Computer Technology", "De La Salle Santiago Zobel", "Divine Light Academy (DLA)", "Don Carlo Cavina School", "Dr. Filemon C. Aguilar Memorial College (DFCAMC)", "Dr. Filemon C. Aguilar Information and Technology Training Institute (DFCAITTI)", "Elizabeth Seton School", "Golden Acres National High School (GANHS)", "Imus Computer College", "Las-Pinas College", "Las-Pinas East National High School (LPENHS)", "Las-Pinas East National High School Equitable Annex (LPENHS Equitable)", "Las-Pinas East National High School Talon Annex (LPENHS Talon)", "Las-Pinas National High School (LPNHS)", "Las-Pinas National High School Gatchalian Annex (LPNHS Gatchalian)", "Las-Pinas North National High School (LPNNHS)", "Las-Pinas Science High School (LPSHS)", "Merry Treasure School (MTS)", "O.B. Montessori Center Inc.", "Our Lady of Pilar Montessori Center", "Philippine Merchant Marine School (PMMS)", "Rizal Experimental Station and Pilot School of Cottage Industries Las-Pinas Campus (RESPSCI)", "Saint Francis of Assisi College System Las-Pinas (SFACS-LP)", "Southville International School and Colleges (SISC)", "Southwood Integrated School", "St. Marks Institute (SMI)", "STI Academy High School", "STI College Las-Pinas", "University of Perpetual Help System DALTA (UPHSD)", "Westfield Science Oriented School (WSOS)", "TS Cruz High School (TSCHS)"]
 muntinlupa_schools = ["AMA Computer Learning Center", "Datamex Institute of Computer Technology", "Imus Computer College Alabang", "Lyceum of Alabang", "Muntinlupa Business High School", "Muntinlupa Institute of Technology", "Muntinlupa National High School (MNHS)", "Muntinlupa Science High School (MSHS)", "Pamantasan ng  Lungsod ng Muntinlupa (PLMun)", "Saint Bernadette College of Alabang", "San Beda College Alabang", "South Mansfield College", "STI College Alabang", "West Bay College"]
 
-all_schools = pasay_schools + makati_schools + taguig_schools + paranaque_schools + laspinas_schools + muntinlupa_schools 
+#all_schools = pasay_schools + makati_schools + taguig_schools + paranaque_schools + laspinas_schools + muntinlupa_schools
+all_schools = [pasay_schools, makati_schools, taguig_schools, paranaque_schools, laspinas_schools, muntinlupa_schools]
 
 pasay_locales = ["Malibay", "Pasay", "Proprietarios"]
 makati_locales = ["Bel-Air", "Evangelista", "Guadalupe", "Jackson", "Makati (Palanan)", "Pembo", "Sacramento"]
@@ -27,6 +28,7 @@ laspinas_locales = ["Admiral", "Almanza", "CAA", "Golden Acres", "Las-Pinas (Man
 muntinlupa_locales = ["Alabang", "Camp Sampaguita", "Cupang", "Karunungan", "Muntinlupa", "New Bilibid Prison (NBP)", "Sucat", "Tunasan"]
 
 all_locales = pasay_locales + makati_locales + taguig_pateros_locales + paranaque_locales + laspinas_locales + muntinlupa_locales 
+#all_locales = [pasay_locales,makati_locales,taguig_pateros_locales,paranaque_locales,laspinas_locales,muntinlupa_locales]
 
 User.create(:email => "admin@admins.com", :password => "admins", :password_confirmation => "admins", :role => 1, :first_name => "admin", :middle_name => "admin", :last_name => "admin")
 User.create(:email => "neilmarion", :password => "neilmarion", :password_confirmation => "neilmarion", :role => 0, :first_name => "Neil Marion", :middle_name => "Flores", :last_name => "dela Cruz")
@@ -35,8 +37,13 @@ User.create(:email => "neilmarion", :password => "neilmarion", :password_confirm
 
 School.create(:name => "ZZZZZ  NONE  ZZZZZ")
 
+z=2
 all_schools.each do |x|
-  School.create(:name => x)
+  x.each do |y|
+    School.create(:name => y, :area_id => z)
+    puts "creating " + y
+  end
+  z+=1
 end
 
 #CREATING AREAS

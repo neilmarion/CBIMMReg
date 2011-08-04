@@ -6,6 +6,11 @@ class Encoder::MembersController < ApplicationController
     @locales = Locale.find(:all)
     @circles = Circle.find(:all)
     @member = Member.new
+
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def show
@@ -40,4 +45,14 @@ class Encoder::MembersController < ApplicationController
     Member.find(params[:id]).destroy
     redirect_to (encoder_members_path)
   end
+
+  def filter_schools
+      @schools = School.find(:all, :conditions =>  "area_id = #{params[:area_id]}")
+      puts "hello"
+
+      respond_to do |format|
+        format.js
+      end    
+  end
+
 end
