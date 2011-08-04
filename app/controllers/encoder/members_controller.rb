@@ -2,8 +2,26 @@ class Encoder::MembersController < ApplicationController
   def index
     @members = Member.find(:all, :conditions => "encoder_id = #{@user.id}") if @user
     @schools = School.find(:all)
+
+    none_school = School.new
+    none_school.name = "-- NONE --"
+    none_school.id = -1
+    @schools << none_school
+
     @areas = Area.find(:all)
+
+    none_area = Area.new
+    none_area.name = "-- NONE --"
+    none_area.id = -1
+    @areas << none_area
+
     @locales = Locale.find(:all)
+
+    none_locales = Locale.new
+    none_locales.name = "-- NONE --"
+    none_locales.id = -1
+    @locales << none_locales
+
     @circles = Circle.find(:all)
     @member = Member.new
 
@@ -48,6 +66,10 @@ class Encoder::MembersController < ApplicationController
 
   def filter_schools
       @schools = School.where(:area_id => params[:id])
+      none = School.new
+      none.name = "-- NONE --"
+      none.id = -1
+      @schools << none
       #@schools = School.find(:all, :conditions =>  "area_id = #{params[:id]}")
       #puts "hello"
 

@@ -36,7 +36,7 @@ User.create(:email => "neilmarion", :password => "neilmarion", :password_confirm
 
 #CREATING SCHOOLS
 
-School.create(:name => "ZZZZZ  NONE  ZZZZZ")
+#School.create(:name => "ZZZZZ  NONE  ZZZZZ")
 
 z=2
 all_schools.each do |x|
@@ -49,7 +49,7 @@ end
 
 #CREATING AREAS
 
-Area.create(:name => "ZZZZZ  NONE  ZZZZZ")
+#Area.create(:name => "ZZZZZ  NONE  ZZZZZ")
 
 all_areas.each do |x|
   Area.create(:name => x, :location => x)
@@ -61,7 +61,7 @@ end
 
 #CREATING LOCALES
 
-Locale.create(:name => "ZZZZZ  NONE  ZZZZZ")
+#Locale.create(:name => "ZZZZZ  NONE  ZZZZZ")
 
 all_locales.each do |x|
   Locale.create(:name => x)

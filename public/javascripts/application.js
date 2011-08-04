@@ -26,17 +26,18 @@ $(function() {
     //alert($('#new_school').attr('id')) 
     //alert($(this).attr('id'));
     if($(this).attr('id') == "member_school_id"){
-      if(this.value == 1) $('#new_school').css("display", "block");
-      else $('#new_school').css("display", "none"); 
+      if(this.value == -1) { $('#new_school').css("display", "block"); }
+      else{ $('#new_school').css("display", "none"); alert("HELLO"); }
     }else if($(this).attr('id') == "member_area_id"){
-      if(this.value == 1) $('#new_area').css("display", "block");
+      if(this.value == -1) $('#new_area').css("display", "block");
       else $('#new_area').css("display", "none"); 
     }else if($(this).attr('id') == "member_locale_id"){
-      if(this.value == 1) $('#new_locale').css("display", "block");
+      if(this.value == -1) $('#new_locale').css("display", "block");
       else $('#new_locale').css("display", "none"); 
     }
     //if(this.value == 1) alert($('#new_school').id)
   });
+
 });
 
 $(document).ready(function() {
