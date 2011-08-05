@@ -1,0 +1,34 @@
+  <tr id="members" class="entry">
+
+
+  <td>
+    <%= @member_new.last_name %>, <%= @member_new.first_name %>
+  </td>
+  <td>
+    <%= @member_new.school.name %>
+  </td>
+  <td>
+    <%= @member_new.area.name %>
+  </td>
+  <td>
+    <%= @member_new.year_level %>
+  </td>
+  <td>
+    <%= @member_new.course_section %>
+  </td>
+  <td>
+    <%= @member_new.locale.name %>
+  </td>
+  <td>
+    <%= @member_new.zone_group %>
+  </td>
+  <td>
+    <%= @member_new.circle.name %>
+  </td>
+  <td>
+    <%= @member_new.contact_number %>
+  </td>
+  <td>
+    <%= button_to "delete", encoder_member_path(@member_new), :method => :delete, :class => "header_link" %>
+  </td>
+  </tr>

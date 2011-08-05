@@ -1,48 +1,41 @@
-
-<table class="entries">
+<table class="entries" id="members">
   <tr id="entries_header">
-      <td>
-        FIRST NAME
-      </td>      
-      <td>
-        LAST NAME
-      </td>
-      <td>
-       SCHOOL
-      </td>
-      <td>
-        AREA OF SCHOOL
-      </td>
-      <td>
-        YR-LVL
-      </td>
-      <td>
-        COURSE / SECTION
-      </td>
-      <td>
-        LOCALE
-      </td>
-      <td>
-       PRK-GRP
-      </td>
-      <td>
-        KAPISANAN
-      </td>
-      <td>
-        CONTACT NO
-      </td>
-      <td>
+    <td>
+      NAME
+    </td>      
+    <td>
+     SCHOOL
+    </td>
+    <td>
+      AREA OF SCHOOL
+    </td>
+    <td>
+      YR-LVL
+    </td>
+    <td>
+      COURSE / <br>SECTION
+    </td>
+    <td>
+      LOCALE
+    </td>
+    <td>
+     PRK-GRP
+    </td>
+    <td>
+      KAPISANAN
+    </td>
+    <td>
+      CONTACT NO
+    </td>
+    <td>
 
-      </td>
-    </tr>
+    </td>
+  </tr>
 
   <% @members.each do |m| %>
     <tr class="entry">
       <td>
-        <%= m.first_name %>
-      </td>
-      <td>
-        <%= m.last_name %>
+        <%= m.last_name %>, <%= m.first_name %>
       </td>
       <td>
         <%= m.school.name %>
@@ -73,9 +66,17 @@
       </td>
     </tr>
   <% end %>
-    <tr class="form_new">
-      <%= render :partial => 'new' %>
-    <tr>
+
+
+
+
+
 </table>
+
+<div id="new" style="width:500px">
+  <%= render 'new' %>
+</div>
+
+
 
 <% link_to "new member", new_encoder_member_path %>

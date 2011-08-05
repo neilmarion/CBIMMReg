@@ -9,10 +9,10 @@ class CreateMembers < ActiveRecord::Migration
       t.string :zone_group
       t.string :contact_number
       t.belongs_to :school
-      t.belongs_to :area
       t.belongs_to :locale
       t.belongs_to :circle
       t.belongs_to :encoder
+      t.belongs_to :area
 
       t.timestamps
     end
@@ -22,3 +22,4 @@ class CreateMembers < ActiveRecord::Migration
     drop_table :members
   end
 end
+

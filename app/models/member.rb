@@ -6,6 +6,6 @@ class Member < ActiveRecord::Base
   belongs_to :school
   belongs_to :locale
   belongs_to :circle
-  belongs_to :area
   belongs_to :encoder
+  belongs_to :area
 end

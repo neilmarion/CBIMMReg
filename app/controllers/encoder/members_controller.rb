@@ -5,21 +5,21 @@ class Encoder::MembersController < ApplicationController
 
     none_school = School.new
     none_school.name = "-- NONE --"
-    none_school.id = -1
+    none_school.id = 1000
     @schools << none_school
 
     @areas = Area.find(:all)
 
     none_area = Area.new
     none_area.name = "-- NONE --"
-    none_area.id = -1
+    none_area.id = 1000
     @areas << none_area
 
     @locales = Locale.find(:all)
 
     none_locales = Locale.new
     none_locales.name = "-- NONE --"
-    none_locales.id = -1
+    none_locales.id = 1000
     @locales << none_locales
 
     @circles = Circle.find(:all)
@@ -38,17 +38,51 @@ class Encoder::MembersController < ApplicationController
   end
 
   def create
-    @member = Member.new(params[:member])
-    @member.school = School.create(:name => params[:new_school]) if params[:new_school] != "Type in school here if not available above"
-    @member.locale = Locale.create(:name => params[:new_locale]) if params[:new_locale] != "Type in locale here if not available above"
-    @member.area = Area.create(:name => params[:new_area]) if params[:new_area] != "Type in area here if not available above"
+    @member_new = Member.new(params[:member])
+    @member_new.school = School.create(:name => params[:new_school]) if params[:new_school] != "Type in school here if not available above"
+    @member_new.locale = Locale.create(:name => params[:new_locale]) if params[:new_locale] != "Type in locale here if not available above"
+    @member_new.area = Area.create(:name => params[:new_area]) if params[:new_area] != "Type in area here if not available above"
 
-    if @member.save
-      flash[:notice] = "Added #{@member.first_name} #{@member.middle_name} #{@member.last_name}"
-      redirect_to (encoder_members_path)
+    if @member_new.save
+      flash[:notice] = "Added #{@member_new.first_name} #{@member_new.middle_name} #{@member_new.last_name}"
+
+      @members = Member.find(:all, :conditions => "encoder_id = #{@user.id}") if @user
+      @schools = School.find(:all)
+
+      none_school = School.new
+      none_school.name = "-- NONE --"
+      none_school.id = 1000
+      @schools << none_school
+
+      @areas = Area.find(:all)
+
+      none_area = Area.new
+      none_area.name = "-- NONE --"
+      none_area.id = 1000
+      @areas << none_area
+
+      @locales = Locale.find(:all)
+
+      none_locales = Locale.new
+      none_locales.name = "-- NONE --"
+      none_locales.id = 1000
+      @locales << none_locales
+
+      @circles = Circle.find(:all)
+      @member = Member.new
+
+      respond_to do |format|
+        format.js
+      end
+      #redirect_to (encoder_members_path)
     else
       render(:action => 'new')
     end
+
+  
+
+    
+
   end
 
   def new
@@ -66,10 +100,29 @@ class Encoder::MembersController < ApplicationController
 
   def filter_schools
       @schools = School.where(:area_id => params[:id])
-      none = School.new
-      none.name = "-- NONE --"
-      none.id = -1
-      @schools << none
+      @area_id = params[:id]
+      none_school = School.new
+      none_school.name = "-- NONE --"
+      none_school.id = 1000
+      @schools << none_school
+
+      @areas = Area.find(:all)
+
+      none_area = Area.new
+      none_area.name = "-- NONE --"
+      none_area.id = 1000
+      @areas << none_area
+
+      @locales = Locale.find(:all)
+
+      none_locales = Locale.new
+      none_locales.name = "-- NONE --"
+      none_locales.id = 1000
+      @locales << none_locales
+
+      @circles = Circle.find(:all)
+
+      @member = Member.new
       #@schools = School.find(:all, :conditions =>  "area_id = #{params[:id]}")
       #puts "hello"
 

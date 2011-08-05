@@ -1,30 +1,73 @@
+<script>
+
+$(function() {
+  $(".form_new td input").keydown(function() {
+    this.style.color = '#000000'
+  });
+  $(".form_new td input").click(function() {
+    if(this.value == 'First Name' || this.value == 'Middle Initial' || this.value == 'Last Name' || this.value == 'Course / Section' || this.value == 'Prk-Grp' || this.value == 'Type in school here if not available above' || this.value == 'Type in area here if not available above' || this.value == 'Type in locale here if not available above' || this.value == 'Contact No') { this.value=''; this.style.color='grey'}
+  });
+  $(".form_new td input").blur(function() {
+    if (this.value == '') {
+      if(this.id == 'member_first_name') this.value = 'First Name'; 
+      else if(this.id == 'member_middle_name') this.value = 'Middle Initial'; 
+      else if(this.id == 'member_last_name') this.value = 'Last Name';
+      else if(this.id == 'member_course_section') this.value = 'Course / Section';
+      else if(this.id == 'member_zone_group') this.value = 'Prk-Grp';
+      else if(this.id == 'member_contact_number') this.value = 'Contact No';
+      else if(this.id == 'new_school') this.value = "Type in school here if not available above";
+      this.style.color='grey';
+
+      // this.style.display='none';
+    }
+  });
+  $(".form_new td select").change(function() {
+    //alert($('#new_school').attr('id')) 
+    //alert($(this).attr('id'));
+    if($(this).attr('id') == "schools_filter"){
+      if(this.value == 1000) { $('#new_area').css("display", "block"); }
+      else $('#new_area').css("display", "none");
+    }else if($(this).attr('id') == "member_school_id"){
+      if(this.value == 1000) { $('#new_school').css("display", "block"); }
+      else $('#new_school').css("display", "none");
+    }else if($(this).attr('id') == "member_area_id"){
+      if(this.value == 1000) $('#new_area').css("display", "block");
+      else $('#new_area').css("display", "none"); 
+    }else if($(this).attr('id') == "member_locale_id"){
+      if(this.value == 1000) $('#new_locale').css("display", "block");
+      else $('#new_locale').css("display", "none");
+    }
+    //if(this.value == 1) alert($('#new_school').id)
+  });
+
+});
 
 
 
+</script>
+
+<table>
+  <tr class="form_new">
 
 
-
-<% form_for @member, :url => encoder_members_path do |m| %>
-  <% @member.errors.full_messages.each do |msg| %>
+<%= form_for @member, :url => encoder_members_path, :remote => true do |m| %>
+  <%= @member.errors.full_messages.each do |msg| %>
     <%= msg %>
   <% end %>
 
-
       <td>
         <%= m.text_field :first_name, { :size => 10, :value => "First Name"} %>
-      </td>
-      <td>
         <%= m.text_field :last_name, { :size => 10, :value => "Last Name"} %>
       </td>
-      <td id="schools">
-          <%= m.select :school_id, options_from_collection_for_select(@schools.sort_by(&:name), 'id', 'name'), :id => 'schools_list' %>
+      <td>
+        <%= m.select :school_id, options_from_collection_for_select(@schools.sort_by(&:id), 'id', 'name'), :id => 'schools_list' %>
         <%= text_field_tag :new_school, "Type in school here if not available above" %>
       </td>
       <td>
-        <%= form_tag '#', :remote => true do %>   
-          <%= select_tag :area_id, options_from_collection_for_select(@areas.sort_by(&:name), 'id', 'name'), :id => "schools_filter" %>
-        <% end %>
-        <%= text_field_tag :new_area, "Type in area here if not available above" %>
+    
+          <%= m.select :area_id, options_from_collection_for_select(@areas.sort_by(&:id), 'id', 'name', @area_id), :id => "schools_filter" %>
+
+          <%= text_field_tag :new_area, "Type in area here if not available above" %>
       </td>
       <td>
         <%= m.select :year_level, options_for_select(Member::YEAR_LEVEL.sort{ |a, b| -1*(b[1] <=> a[1]) }) %><br/>
@@ -33,7 +76,7 @@
         <%= m.text_field :course_section, { :size => 15, :value => "Course / Section"}%>
       </td>
       <td>
-        <%= m.select :locale_id, options_from_collection_for_select(@locales.sort_by(&:name), 'id', 'name') %>
+        <%= m.select :locale_id, options_from_collection_for_select(@locales.sort_by(&:id), 'id', 'name') %>
         <%= text_field_tag :new_locale, "Type in locale here if not available above" %>
       </td>
       <td>
@@ -48,7 +91,8 @@
       <td>
         <%= m.submit "CREATE" %>
       </td>
-    </tr>
 
   <%= m.hidden_field :encoder_id, :value => @user.id %>
 <% end %>
+  </tr>
+</table>

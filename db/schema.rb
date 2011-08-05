@@ -40,10 +40,10 @@ ActiveRecord::Schema.define(:version => 20110801083050) do
     t.string   "zone_group"
     t.string   "contact_number"
     t.integer  "school_id"
-    t.integer  "area_id"
     t.integer  "locale_id"
     t.integer  "circle_id"
     t.integer  "encoder_id"
+    t.integer  "area_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

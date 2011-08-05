@@ -1,6 +1,7 @@
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
 
+
 $(function() {
   $(".form_new td input").keydown(function() {
     this.style.color = '#000000'
@@ -25,31 +26,49 @@ $(function() {
   $(".form_new td select").change(function() {
     //alert($('#new_school').attr('id')) 
     //alert($(this).attr('id'));
-    if($(this).attr('id') == "member_school_id"){
-      if(this.value == -1) { $('#new_school').css("display", "block"); }
-      else{ $('#new_school').css("display", "none"); alert("HELLO"); }
+    if($(this).attr('id') == "schools_filter"){
+      if(this.value == 1000) { $('#new_area').css("display", "block"); }
+      else $('#new_area').css("display", "none");
+    }else if($(this).attr('id') == "member_school_id"){
+      if(this.value == 1000) { $('#new_school').css("display", "block"); }
+      else $('#new_school').css("display", "none");
     }else if($(this).attr('id') == "member_area_id"){
-      if(this.value == -1) $('#new_area').css("display", "block");
+      if(this.value == 1000) $('#new_area').css("display", "block");
       else $('#new_area').css("display", "none"); 
     }else if($(this).attr('id') == "member_locale_id"){
-      if(this.value == -1) $('#new_locale').css("display", "block");
-      else $('#new_locale').css("display", "none"); 
+      if(this.value == 1000) $('#new_locale').css("display", "block");
+      else $('#new_locale').css("display", "none");
     }
     //if(this.value == 1) alert($('#new_school').id)
   });
 
 });
 
+
+/*
 $(document).ready(function() {
 
-    $('#schools_filter').change(function(){
-      //alert(JSON.stringify( $(this).attr('value') ));
-      $.ajax({type: "post", url: '/encoder/members/filter_schools',
-        data: {'id' : $(this).attr('value') },
-        success: function(data){
+  $('#schools_filter').change(function(){
+    //alert(JSON.stringify( $(this).attr('value') ));
 
-          }
-      })
-    });
+    $.ajax({type: "post", url: '/encoder/members/filter_schools',
+      data: {'id' : $(this).attr('value') },
+      success: function(data){
+
+        }
+    })
   });
+
+  $('#member_submit').change(function(){
+
+    //alert(JSON.stringify( $(this).attr('value') ));
+    $.ajax({type: "post", url: '/encoder/members',
+      success: function(data){
+
+        }
+    })
+  });
+
+});
+*/
 

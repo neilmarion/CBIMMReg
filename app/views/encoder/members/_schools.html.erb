@@ -1,2 +1,2 @@
 <%= select_tag :school_id, options_from_collection_for_select(@schools.sort_by(&:name), 'id', 'name'), :id => "member_school_id", :name => "member[school_id]" %>
-        <%= text_field_tag :new_school, "Type in school here if not available above" %>
+<%= text_field_tag :new_school, "Type in school here if not available above" %>
