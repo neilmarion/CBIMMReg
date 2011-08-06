@@ -7,6 +7,7 @@
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
 Secret.create(:password => "98273kjh")
+Secret.create(:password => "98273kji")
 
 all_areas = ["Pasay", "Makati", "Taguig", "Paranaque", "Las Pinas", "Muntinlupa"]
 added_areas = ["MMN", "MMW", "MME", "MMC", "Cavite", "Rizal", "Laguna"]
