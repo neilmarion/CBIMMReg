@@ -39,7 +39,7 @@ User.create(:email => "neilmarion", :password => "neilmarion", :password_confirm
 #School.create(:name => "ZZZZZ  NONE  ZZZZZ")
 
 z=1
-all_schools.each do |x|
+all_schools.sort.each do |x|
   x.each do |y|
     School.create(:name => y, :area_id => z)
     puts "creating " + y
@@ -51,19 +51,20 @@ end
 
 #Area.create(:name => "ZZZZZ  NONE  ZZZZZ")
 
-all_areas.each do |x|
+(all_areas+added_areas).sort.each do |x|
   Area.create(:name => x, :location => x)
 end
 
+=begin
 added_areas.each do |x|
   Area.create(:name => x, :location => x)
 end
-
+=end
 #CREATING LOCALES
 
 #Locale.create(:name => "ZZZZZ  NONE  ZZZZZ")
 
-all_locales.each do |x|
+all_locales.sort.each do |x|
   Locale.create(:name => x)
 end
 
@@ -76,9 +77,9 @@ circles = ["Buklod", "Kadiwa", "Binhi"]
 end
 
 #CREATING MEMBERS
-
+=begin
 1.upto(100) do
   Member.create(:first_name => Faker::Name.first_name, :last_name => Faker::Name.last_name, :school_id => rand(125)+2, :area_id => rand(5)+1, :year_level => rand(4)+1, :course_section => Faker::Name.last_name, :locale_id => rand(41)+2, :zone_group => "#{rand(5)}-#{rand(20)}", :circle_id => rand(2)+1, :contact_number => Faker::PhoneNumber.phone_number, :encoder_id => 2)
 end
-
+=end
 
