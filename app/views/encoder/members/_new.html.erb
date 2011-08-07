@@ -60,7 +60,7 @@ $(function() {
         <%= m.text_field :last_name, { :size => 10, :value => "Last Name"} %>
       </td>
       <td>
-        <%= m.select :school_id, options_from_collection_for_select(@schools.sort_by(&:id), 'id', 'name'), :id => 'schools_list' %>
+        <%= m.select :school_id, options_from_collection_for_select(@schools.sort_by(&:name), 'id', 'name'), :id => 'schools_list' %>
         <%= text_field_tag :new_school, "Type in school here if not available above" %>
       </td>
       <td>
