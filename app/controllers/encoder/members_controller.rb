@@ -2,6 +2,7 @@ class Encoder::MembersController < ApplicationController
   def index
     @members = Member.find(:all, :conditions => "encoder_id = #{@user.id}") if @user
     @schools = School.find(:all)
+    @schools = @schools.sort_by(&:name)
 
     none_school = School.new
     none_school.name = "-- NONE --"
@@ -48,6 +49,10 @@ class Encoder::MembersController < ApplicationController
 
       @members = Member.find(:all, :conditions => "encoder_id = #{@user.id}") if @user
       @schools = School.find(:all)
+
+
+      @schools = @schools.sort_by(&:name)
+
 
       none_school = School.new
       none_school.name = "-- NONE --"

@@ -20,7 +20,7 @@ laspinas_schools = ["ABE International College of Business and Accountancy", "Au
 muntinlupa_schools = ["AMA Computer Learning Center", "Datamex Institute of Computer Technology", "Imus Computer College Alabang", "Lyceum of Alabang", "Muntinlupa Business High School", "Muntinlupa Institute of Technology", "Muntinlupa National High School (MNHS)", "Muntinlupa Science High School (MSHS)", "Pamantasan ng  Lungsod ng Muntinlupa (PLMun)", "Saint Bernadette College of Alabang", "San Beda College Alabang", "South Mansfield College", "STI College Alabang", "West Bay College"]
 
 #all_schools = pasay_schools + makati_schools + taguig_schools + paranaque_schools + laspinas_schools + muntinlupa_schools
-all_schools = [pasay_schools, makati_schools, taguig_schools, paranaque_schools, laspinas_schools, muntinlupa_schools].sort
+all_schools = [pasay_schools, makati_schools, taguig_schools, paranaque_schools, laspinas_schools, muntinlupa_schools]
 
 pasay_locales = ["Malibay", "Pasay", "Proprietarios"]
 makati_locales = ["Bel-Air", "Evangelista", "Guadalupe", "Jackson", "Makati (Palanan)", "Pembo", "Sacramento"]
