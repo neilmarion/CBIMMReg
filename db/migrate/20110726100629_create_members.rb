@@ -8,6 +8,7 @@ class CreateMembers < ActiveRecord::Migration
       t.string :course_section
       t.string :zone_group
       t.string :contact_number
+      t.integer :hs_col
       t.belongs_to :school
       t.belongs_to :locale
       t.belongs_to :circle

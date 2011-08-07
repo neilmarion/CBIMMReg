@@ -17,8 +17,12 @@
     <%= @member_new.course_section %>
   </td>
   <td>
+    <%= Member::HS_COL.invert[@member_new.hs_col] %>
+  </td>
+  <td>
     <%= @member_new.locale.name %>
   </td>
+
   <td>
     <%= @member_new.zone_group %>
   </td>

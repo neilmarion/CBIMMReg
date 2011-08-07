@@ -76,6 +76,9 @@ $(function() {
         <%= m.text_field :course_section, { :size => 15, :value => "Course / Section"}%>
       </td>
       <td>
+        <%= m.select :hs_col, options_for_select(Member::HS_COL.sort{ |a, b| -1*(b[1] <=> a[1]) }) %><br/>
+      </td>
+      <td>
         <%= m.select :locale_id, options_from_collection_for_select(@locales.sort_by(&:id), 'id', 'name') %>
         <%= text_field_tag :new_locale, "Type in locale here if not available above" %>
       </td>

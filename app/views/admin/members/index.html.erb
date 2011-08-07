@@ -101,6 +101,9 @@
       COURSE / SECTION
     </td>
     <td>
+      HS / <br>COL
+    </td>
+    <td>
       LOCALE
     </td>
     <td>
@@ -133,6 +136,9 @@
       </td>
       <td>
         <%= m.course_section %>
+      </td>
+      <td>
+        <%= Member::HS_COL.invert[m.hs_col] %>
       </td>
       <td>
         <%= m.locale.name %>

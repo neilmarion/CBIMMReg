@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(:version => 20110801083050) do
     t.string   "course_section"
     t.string   "zone_group"
     t.string   "contact_number"
+    t.integer  "hs_col"
     t.integer  "school_id"
     t.integer  "locale_id"
     t.integer  "circle_id"
