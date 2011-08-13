@@ -46,6 +46,8 @@ $(function() {
 
 </script>
 
+
+  <font style="color:red"><%= @errors if @errors %></font>
 <table>
   <tr class="form_new">
 
@@ -54,6 +56,9 @@ $(function() {
   <%= @member.errors.full_messages.each do |msg| %>
     <%= msg %>
   <% end %>
+
+
+
 
       <td>
         <%= m.text_field :first_name, { :size => 10, :value => "First Name"} %>

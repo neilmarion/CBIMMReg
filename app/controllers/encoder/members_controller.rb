@@ -44,49 +44,84 @@ class Encoder::MembersController < ApplicationController
     @member_new.locale = Locale.create(:name => params[:new_locale]) if params[:new_locale] != "Type in locale here if not available above"
     @member_new.area = Area.create(:name => params[:new_area]) if params[:new_area] != "Type in area here if not available above"
 
-    if @member_new.save
-      flash[:notice] = "Added #{@member_new.first_name} #{@member_new.middle_name} #{@member_new.last_name}"
-
-      @members = Member.find(:all, :conditions => "encoder_id = #{@user.id}") if @user
-      @schools = School.find(:all)
+    puts "HELO " + params[:member][:locale_id] + "  " + params[:member][:school_id] + "  " + params[:member][:area_id]
 
 
-      @schools = @schools.sort_by(&:name)
+    if params[:member][:locale_id] != '1000' && params[:member][:school_id] != '1000' && params[:member][:area_id] != '1000'
+      puts "PUMASOK"
+      if @member_new.save
+        flash[:notice] = "Added #{@member_new.first_name} #{@member_new.middle_name} #{@member_new.last_name}"
+
+        @members = Member.find(:all, :conditions => "encoder_id = #{@user.id}") if @user
+        @schools = School.find(:all)
 
 
-      none_school = School.new
-      none_school.name = "-- NONE --"
-      none_school.id = 1000
-      @schools << none_school
+        @schools = @schools.sort_by(&:name)
 
-      @areas = Area.find(:all)
 
-      none_area = Area.new
-      none_area.name = "-- NONE --"
-      none_area.id = 1000
-      @areas << none_area
+        none_school = School.new
+        none_school.name = "-- NONE --"
+        none_school.id = 1000
+        @schools << none_school
 
-      @locales = Locale.find(:all)
+        @areas = Area.find(:all)
 
-      none_locales = Locale.new
-      none_locales.name = "-- NONE --"
-      none_locales.id = 1000
-      @locales << none_locales
+        none_area = Area.new
+        none_area.name = "-- NONE --"
+        none_area.id = 1000
+        @areas << none_area
 
-      @circles = Circle.find(:all)
-      @member = Member.new
+        @locales = Locale.find(:all)
 
+        none_locales = Locale.new
+        none_locales.name = "-- NONE --"
+        none_locales.id = 1000
+        @locales << none_locales
+
+        @circles = Circle.find(:all)
+        @member = Member.new
+
+        end
+
+        respond_to do |format|
+          format.js
+        end
+      #redirect_to (encoder_members_path)
+    else
+      @errors = "School, Area or Locale fields cannot be empty."
+        @members = Member.find(:all, :conditions => "encoder_id = #{@user.id}") if @user
+        @schools = School.find(:all)
+
+
+        @schools = @schools.sort_by(&:name)
+
+
+        none_school = School.new
+        none_school.name = "-- NONE --"
+        none_school.id = 1000
+        @schools << none_school
+
+        @areas = Area.find(:all)
+
+        none_area = Area.new
+        none_area.name = "-- NONE --"
+        none_area.id = 1000
+        @areas << none_area
+
+        @locales = Locale.find(:all)
+
+        none_locales = Locale.new
+        none_locales.name = "-- NONE --"
+        none_locales.id = 1000
+        @locales << none_locales
+
+        @circles = Circle.find(:all)
+        @member = Member.new
       respond_to do |format|
         format.js
       end
-      #redirect_to (encoder_members_path)
-    else
-      render(:action => 'new')
     end
 
-  
-
-    
 
   end
 

@@ -13,6 +13,9 @@ gem 'jquery-rails'
 gem 'will_paginate'
 gem 'fastercsv'
 gem 'ec2onrails'
+gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'taps'
+gem 'sequel'
 
 
 # Use unicorn as the web server

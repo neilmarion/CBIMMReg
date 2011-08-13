@@ -1,3 +1,5 @@
+<% if @member_new.locale_id != 1000 && @member_new.school_id != 1000 && @member_new.area_id != 1000 %>
+
   <tr id="members" class="entry">
 
 
@@ -36,3 +38,5 @@
     <%= button_to "delete", encoder_member_path(@member_new), :method => :delete, :class => "header_link" %>
   </td>
   </tr>
+
+<% end %>
