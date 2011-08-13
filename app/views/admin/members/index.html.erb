@@ -81,7 +81,9 @@
 </div>
 
 <table class="entries">
-  <tr id="entries_header">      
+  <tr id="entries_header">   
+    <td>   
+    </td>
     <td>
       LAST NAME
     </td>
@@ -116,9 +118,12 @@
       CONTACT NO
     </td>
   </tr>
-
+  <% x = 1 %>
   <% @members.each do |m| %>
     <tr class="entry">
+      <td>
+        <%= x %>
+      </td>
       <td>
         <%= m.last_name %>
       </td>
@@ -153,5 +158,6 @@
         <%= m.contact_number %>
       </td>
     </tr>
+  <% x+=1 %>
   <% end %>
 </table>
